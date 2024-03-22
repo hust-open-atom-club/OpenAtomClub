@@ -1,21 +1,33 @@
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-
-    {% if site.footer.links %}
-      {% for link in site.footer.links %}
-        {% if link.label and link.url %}
-          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-
-    {% unless site.atom_feed.hide %}
-      <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-    {% endunless %}
-  </ul>
+<div class="footer-row">
+  <div class="footer-block footer__about">
+    <p>华科开放原子开源俱乐部是一个致力于促进开源文化发展、贡献优秀开源软件的活跃开源社区，
+      我们坚信开源文化的重要性，相信共同的开源目标将会使我们变得更加强大和有影响力。</p>
+  </div>
+  <div class="footer-block footer__extras">
+    <div class="footer__contact">
+      <ul>
+        <li>
+          <a href="/wiki/intro/"> 关于我们</a>
+        </li>
+        <li>
+          <a href="https://github.com/{{ site.repository }}"><i class="fab fa-fw fa-github"></i> 本站仓库</a>
+        </li>
+        </ul>
+    </div>
 </div>
+<style>
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+p{
+  margin: 0;
+}
+
+.footer-block {
+  flex: 1;
+}
+
+</style>

@@ -149,10 +149,9 @@ footer:
       # url:
 
 
+
 # Reading Files
-include:
-  - .htaccess
-  - _pages
+include: ["_pages"]
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -280,6 +279,16 @@ defaults:
   - scope:
       path: ""
       type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: pages
     values:
       layout: single
       author_profile: true
