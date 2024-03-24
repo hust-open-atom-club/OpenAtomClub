@@ -149,10 +149,9 @@ footer:
       # url:
 
 
+
 # Reading Files
-include:
-  - .htaccess
-  - _pages
+include: ["_pages","_news"]
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -220,6 +219,12 @@ paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
+collections_dir: pages
+collections:
+  news:
+    output: true
+    permalink: /news/:title/
+
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
@@ -280,6 +285,16 @@ defaults:
   - scope:
       path: ""
       type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: pages
     values:
       layout: single
       author_profile: true
