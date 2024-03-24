@@ -1,0 +1,22 @@
+---
+layout: splash
+---
+
+{% assign news_posts = site.news | sort: 'date' | reverse %}
+
+<div class="row">
+  {% for post in news_posts %}
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card">
+        {% if post.image %}
+          <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
+        {% endif %}
+        <div class="card-body">
+          <h5 class="card-title">{{ post.title }}</h5>
+          <p class="card-text">{{ post.excerpt }}</p>
+          <a href="{{ post.url }}" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
