@@ -12,22 +12,30 @@
         <li>
           <a href="https://github.com/{{ site.repository }}"><i class="fab fa-fw fa-github"></i> 本站仓库</a>
         </li>
-        </ul>
+      </ul>
     </div>
+  </div>
 </div>
 <style>
-.footer-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+  .footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+    /* Add this line to reduce the vertical size of the footer */
+  }
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 20px;
+  }
+  p {
+    margin: 0;
+    font-size: 0.8em;
+    /* Add this line to reduce the font size of the paragraph text */
+  }
 
-p{
-  margin: 0;
-}
-
-.footer-block {
-  flex: 1;
-}
-
+  .footer-block {
+    flex: 1;
+  }
 </style>
