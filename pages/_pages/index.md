@@ -1,5 +1,5 @@
 ---
-layout: news-list
+layout: splash
 title: "HUST OpenAtom Open Source Club"
 excerpt: "华中科技大学开放原子开源俱乐部"
 tagline: "华中科技大学开放原子开源俱乐部"
@@ -12,5 +12,3 @@ header:
       url: /wiki/intro/
 ---
 
-<!-- Path: _layouts/news-list.html -->
-<!-- Compare this snippet from _pages/index.html: -->

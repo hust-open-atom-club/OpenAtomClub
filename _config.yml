@@ -151,7 +151,7 @@ footer:
 
 
 # Reading Files
-include: ["_pages","_news"]
+include: ["_pages","_news","_wiki"]
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -224,6 +224,9 @@ collections:
   news:
     output: true
     permalink: /news/:title/
+  wiki:
+    output: true
+    permalink: /wiki/:title/
 
 # Plugins (previously gems:)
 plugins:

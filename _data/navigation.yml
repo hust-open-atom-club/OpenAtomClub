@@ -1,5 +1,9 @@
 # main links
 main:
+  - title: "News"
+    url: /news/
+  - title: "Wiki"
+    url: /wiki/
   - title: "Home"
     url: /
   - title: "Github"
