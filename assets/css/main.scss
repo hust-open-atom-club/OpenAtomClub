@@ -6,3 +6,29 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+$red: #e55643;
+$green: #2b9f5e;
+$yellow: #f1c83c;
+$shadow: #533d4a;
+
+h1 {
+    .program-title {
+        text-transform: uppercase;
+        text-align: center;
+        // add more space between the characters
+        letter-spacing: 0.2em;
+    }
+}
+
+.page__hero--overlay .page__lead{
+    max-width: 100%;
+}
+
+.page__lead {
+    font-size: 1em;
+    font-weight: 300;
+    color: $shadow;
+    margin-bottom: 1em;
+    
+}
