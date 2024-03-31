@@ -1,7 +1,7 @@
 ---
-title: "club"
+title: "intro"
 layout: splash
-excerpt: "主页"
+excerpt: "俱乐部介绍"
 ---
 
 ## 俱乐部介绍
