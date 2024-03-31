@@ -1,8 +1,8 @@
 ---
-layout: news-list
+layout: splash
 title: "HUST OpenAtom Open Source Club"
 excerpt: "华中科技大学开放原子开源俱乐部"
-tagline: "华中科技大学开放原子开源俱乐部"
+tagline: "华科开放原子开源俱乐部是一个致力于促进开源文化发展、贡献优秀开源软件的活跃社区，我们坚信开源文化的重要性，相信共同的开源目标将会使我们变得更加强大和有影响力。因此，我们积极投入人力物力开展开源操作系统社区贡献，引导学校老师学生参与开源活动，向开源社区做出自己的贡献。"
 permalink: /
 header:
   overlay_image: /assets/images/index.jpg
@@ -12,5 +12,68 @@ header:
       url: /wiki/intro/
 ---
 
-<!-- Path: _layouts/news-list.html -->
-<!-- Compare this snippet from _pages/index.html: -->
+<h1>
+  <div class="program-title">⭐明星项目⭐</div>
+</h1>
+
+<div align="center">
+  <div class="custom-carousel">
+    <div class="item">
+      <a href="https://github.com/hust-open-atom-club/hust-mirrors">
+        <img src="/assets/images/mirrors-cover.png" alt="HUST Mirror hustmirror">
+        <h3>✅ HUST Mirror</h3>
+      </a>
+      <!-- bold and em-->
+      <b><p>华中科技大学开源镜像站<br><em>（公网访问即将上线）</em></p></b>
+    </div>
+    <div class="item">
+      <a href="https://github.com/hust-open-atom-club/hustmirror-cli">
+        <img src="/assets/images/mirrorcli-cover.png" alt="Mirror CLI">
+        <h3>📦 Mirror CLI</h3>
+      </a>
+      <p>一键换源的命令行工具：支持 Ubuntu，Debian，Deepin，PyPI，crates 等多个发行版及工具</p>
+    </div>
+  </div>
+
+  <style>
+    /* every item is in column, left introduction and right imgs */
+    .custom-carousel {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      margin: 0 auto;
+      padding: 0;
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      max-height: 100%;
+      background-color: #f8f9fa;
+      /* let the top of the item in it align */
+      /* align-items: flex-start; */
+    }
+
+    /* add hover effect for item */
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #e9ecef;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+    }
+
+    /* add hover effect for item */
+    .item:hover {
+      /* transform: scale(1.05); */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    
+  </style>
+</div>
