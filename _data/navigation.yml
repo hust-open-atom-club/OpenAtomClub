@@ -2,12 +2,16 @@
 main:
   - title: "News"
     url: /news/
+    icon: fas fa-newspaper
   - title: "Wiki"
     url: /wiki/
+    icon: fas fa-book
   - title: "Github"
     url: https://github.com/hust-open-atom-club
+    icon: fab fa-github
   - title: "Mirrors"
     url: http://mirrors.openatom.club
+    icon: fas fa-mirror
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
