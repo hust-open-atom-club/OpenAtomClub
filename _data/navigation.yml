@@ -1,12 +1,12 @@
 # main links
 main:
-  - title: '<i class="far fa-newspaper"></i>News'
+  - title: '<i class="far fa-newspaper"></i> News'
     url: /news/
   - title: '<i class="fas fa-book"></i> Wiki'
     url: /wiki/
-  - title: '<i class="fab fa-github"></i>Github'
+  - title: '<i class="fab fa-github"></i> Github'
     url: https://github.com/hust-open-atom-club
-  - title: '<i class="fas fa-server"></i>Mirrors'
+  - title: '<i class="fas fa-server"></i> Mirrors'
     url: http://mirrors.openatom.club
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
