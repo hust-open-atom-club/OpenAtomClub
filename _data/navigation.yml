@@ -4,10 +4,10 @@ main:
     url: /news/
   - title: "Wiki"
     url: /wiki/
-  - title: "Home"
-    url: /
   - title: "Github"
     url: https://github.com/hust-open-atom-club
+  - title: "Mirrors"
+    url: mirrors.hust.edu.cn
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
