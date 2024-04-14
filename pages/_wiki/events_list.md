@@ -10,6 +10,5 @@ excerpt: "俱乐部活动列表"
 
 欢迎大家订阅飞书组织的日历。
 
-![calender](/assets/images/calender.png)
-
 ## 活动概览
+
