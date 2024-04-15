@@ -35,53 +35,75 @@ header:
     </div>
   </div>
 
-  <style>
-    /* every item is in column, left introduction and right imgs */
-    .custom-carousel {
-      display: flex;
-      flex-wrap: nowrap;
-      overflow: visible;
-      scroll-snap-type: x mandatory;
-      scroll-behavior: smooth;
-      -webkit-overflow-scrolling: touch;
-      margin: 0 auto;
-      padding: 0;
-      width: 100%;
-      max-width: 100%;
-      height: 100%;
-      max-height: 100%;
-      background-color: #ffffff;
-      /* let the top of the item in it align */
-      /* align-items: flex-start; */
-    }
 
-    /* add hover effect for item */
-    .item {
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: center;
-      margin: 10px;
-      /* padding: 10px; */
-      border: 1px solid #e9ecef;
-      border-radius: 5px;
-      /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-      transition: all 0.3s;
-    }
-
-    /* add hover effect for item */
-    .item:hover {
-      /* transform: scale(1.05); */
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    }
-    
-    .item > a > img {
-      border-radius: 5px 5px 0px 0px;
-    }
-    
-    .item > h3,
-    .item > p{
-      margin: .5em;
-    }
-  </style>
 </div>
+<div align="center">
+  <div class="custom-carousel">
+    <div class="item">
+      <a href="https://github.com/hust-open-atom-club/TranslateProject">
+        <img src="/assets/images/HCTT-cover.png" alt="HCTT">
+        <h3>HCTT 翻译团队</h3>
+      </a>
+      <!-- bold and em-->
+      <p>HCTT(HUST openatom Club Translation Team) 是“华科开放原子开源俱乐部”的翻译团队<br></p>
+    </div>
+    <div class="item">
+      <a href="https://github.com/hust-open-atom-club/linux-insides-zh/">
+        <img src="/assets/images/linux-cover.png" alt="linux-insides-zh">
+        <h3>Linux 内核揭秘</h3>
+      </a>
+      <p>分享对 Linux 内核机理的一些浅见，帮助读者理解 Linux 内核机理和其他底层内容。</p>
+    </div>
+  </div>
+
+
+</div>
+<style scoped>
+  /* every item is in column, left introduction and right imgs */
+  .custom-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: visible;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    background-color: #ffffff;
+    /* let the top of the item in it align */
+    /* align-items: flex-start; */
+  }
+
+  /* add hover effect for item */
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 10px;
+    /* padding: 10px; */
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    transition: all 0.3s;
+  }
+
+  /* add hover effect for item */
+  .item:hover {
+    /* transform: scale(1.05); */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item > a > img {
+    border-radius: 5px 5px 0px 0px;
+  }
+  
+  .item > h3,
+  .item > p{
+    margin: .5em;
+  }
+</style>
