@@ -25,7 +25,7 @@ url                      : "https://hust.openatom.club/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "hust-open-atom-club/OpenAtomClub"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/header.png"
+logo                     : "/assets/images/penguin-logo.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
