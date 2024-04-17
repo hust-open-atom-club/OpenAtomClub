@@ -4,7 +4,7 @@ main:
     url: /news/
   - title: '<i class="fas fa-book"></i> Wiki'
     url: /wiki/
-  - title: '<i class="fab fa-github"></i> Github'
+  - title: '<i class="fab fa-github"></i> GitHub'
     url: https://github.com/hust-open-atom-club
   - title: '<i class="fas fa-server"></i> Mirrors'
     url: https://mirrors.hust.edu.cn
