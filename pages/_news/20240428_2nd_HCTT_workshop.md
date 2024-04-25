@@ -11,6 +11,7 @@ header:
 活动提供任务需要的硬件设备，领取任务完成后，受邀参与的项目维护者会现场检查和合并 Pull Request。欢迎大家前来开源工坊学习！
 
 本次开源工坊是俱乐部HCTT翻译团队第二次分享活动，为Linux内核文档中文翻译专场。HCTT团队会带领大家翻译Linux内核相关文档，完成整个翻译流程。
+
 工坊主题：​第二次HCTT开源工坊
 
 主讲人：慕冬亮，刘浩阳
@@ -36,9 +37,13 @@ https://ixy0caf7465.feishu.cn/share/base/form/shrcnEJitADxgajFd8qhGCocW9d
 
 
 飞书线上会议：
+
 日程主题: 第二次HCTT开源工坊
+
 时间: 2024年4月28日 14:30 - 17:00 (GMT+8)
+
 组织者: 慕冬亮，刘浩阳
+
 会议链接：https://vc.feishu.cn/j/624304672
 
 
