@@ -7,4 +7,4 @@ header:
   overlay_filter: 0.25
 ---
 
-![原创开源项目分享会](/assets/images/os_project_poster.png)
+![原创开源项目分享会](/assets/images/os_project_poster.jpg)
