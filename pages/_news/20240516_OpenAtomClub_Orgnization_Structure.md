@@ -10,7 +10,7 @@ header:
 
 ![image](https://github.com/gitveg/OpenAtomClub/assets/images/OpenAtomClub_Orgnization_structure.jpg)
 
-</center>俱乐部组织架构及各部门主要成员
+<center>俱乐部组织架构及各部门主要成员</center>
 
 目前俱乐部的日常工作主要由四个部门负责：宣传部、编辑部、技术部，以及综合办公室。下面对各部门进行简要介绍。
 
