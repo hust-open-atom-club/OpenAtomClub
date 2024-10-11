@@ -1,5 +1,5 @@
 ---
-title: "开源操作系统训练营-华科线上宣讲系列活动"
+title: "开源操作系统训练营-华科大线上宣讲系列活动"
 layout: splash
 excerpt: "2024-10-03"
 header:
