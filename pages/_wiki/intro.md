@@ -1,5 +1,5 @@
 ---
-title: "intro"
+title: "Introduction"
 layout: splash
 excerpt: "俱乐部介绍"
 ---
@@ -25,9 +25,3 @@ excerpt: "俱乐部介绍"
 |HUST-OS-BOT|Hust OS Contribution 邮件任务机器人|[hust-os-bot](https://gitee.com/hust-open-atom-club/hust-os-bot)|
 |KTestBot|内核补丁邮件测试机器人|[KTestRobot](https://gitee.com/hust-open-atom-club/KTestRobot)|
 |larkapp|内核邮件飞书通知机器人|[larkapp](https://gitee.com/hust-open-atom-club/larkapp)|
-
-## 加入我们
-
-华科开放原子开源俱乐部计划于「每学期前两周」举办“开放原子开源俱乐部招新”活动，即每年举办两场。该活动旨在推广本俱乐部，吸纳更多成员加入俱乐部。活动将在学校内举行，面向全校学生。
-
-<!-- LINK GROUP -->
