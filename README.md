@@ -35,7 +35,7 @@ docker build -t <docker-name> .
 
 
 ```
-docker run -name <docker-name>
+docker run -it --name <docker-name> /bin/bash
 ```
 
 3. 开发
