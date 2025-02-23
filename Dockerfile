@@ -1,10 +1,16 @@
-FROM ubuntu:latest
+FROM ruby:3.2
 
-RUN apt update && apt install -y curl git build-essential libssl-dev libreadline-dev zlib1g-dev ruby-full vim 
-RUN gem install jekyll bundler
-RUN echo "echo 'set your proxy and clone the repository `https://github.com/hust-open-atom-club/OpenAtomClub.git` or `https://github.com/<your-name>/OpenAtomClub.git` '">> ~/.bashrc
+WORKDIR /app
 
-WORKDIR /workspace
+# RUN apk add --no-cache bash build-base git 
+
+
+
+COPY . .
+# NOTE: you need to set a proxy to run this command
+# RUN bundle install --path=~/vendor/bundler
+
+
 
 EXPOSE 4000
-CMD ["bash"]
+CMD bash/bin
