@@ -20,7 +20,7 @@ jobs:
             jekyll/jekyll:latest \
             jekyll build                    #conduct setting commands
 
-      - name: Deploy to GitHub Pages
+      - name: Dockerfile to GitHub Pages
         uses: actions/deploy-pages@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
