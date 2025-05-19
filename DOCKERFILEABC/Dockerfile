@@ -1,6 +1,8 @@
-    FROM ruby:alpine
-    WORKDIR /usr/src/app
-    RUN gem install jekyll bundler
-    COPY . .
-    RUN bundle install
-    CMD [ "jekyll","serve", "--host=0.0.0.0", "--port=4000" ]           
+FROM ruby:3.4-slim
+WORKDIR /usr/src/app
+RUN apt-get update && apt-get install -y build-essential
+RUN gem install jekyll bundler
+COPY . .
+RUN jekyll build
+EXPOSE 4000
+CMD ["jekyll", "serve", "--host=0.0.0.0"]
