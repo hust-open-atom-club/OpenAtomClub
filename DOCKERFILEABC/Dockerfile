@@ -5,4 +5,5 @@ RUN gem install jekyll bundler
 COPY . .
 RUN jekyll build
 EXPOSE 4000
-CMD ["jekyll", "serve", "--host=0.0.0.0"]
+CMD ["jekyll", "serve", "--host=0.0.0.0"]  
+# 新的实现, 但是测试有点小问题
