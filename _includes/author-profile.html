@@ -15,7 +15,7 @@
     </div>
   {% endif %}
 
-  <div class="author__content">
+  <!-- <div class="author__content">
     {% if author.home %}
       <a href="{{ author.home | relative_url }}"><h3 class="author__name" itemprop="name">{{ author.name }}</h3></a>
     {% else %}
@@ -35,7 +35,7 @@
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
           <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">{{ author.location }}</span>
         </li>
-      {% endif %}
+      {% endif %} -->
 
       {% if author.links %}
         {% for link in author.links %}
