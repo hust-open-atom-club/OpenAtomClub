@@ -4,7 +4,7 @@ title: "HUST Mirror"
 permalink: /projects/hust-mirrors/
 excerpt: "华中科技大学开源镜像站"
 header:
-  overlay_image: /assets/images/mirrors-cover.png
+  overlay_image: /assets/images/hust-mirror-bar.png
   overlay_filter: 0.25
   actions:
     - label: "访问镜像站"
@@ -21,7 +21,7 @@ header:
 华中科技大学开放原子开源俱乐部 践行开放、共享、协同、贡献的理念， 专注于通用Linux和物联网操作系统领域，并促进跨学科合作，提升技能，分享知识，为国内开源生态系统打造可持续的开源之路。
 华中科技大学OpenHarmany技术俱乐部借助OpenHarmony社区平台推动开源技术和产学研合作，通过校内教学与俱乐部实践的深度融合，鼓励和推动开源社区技术研究和创新探索，繁荣开源社区生态。
 华中科技大学Linux协会 是由华中科技大学在校的Linux爱好者自发组织成立的学术科技类社团。协会旨在为Linux使用者提供一个可以有效交流学习的平台，并推广校内外自由软件的使用，营造自由软件社区的文化氛围。
-本站的源码可在 hust-mirrors 前端网站 和 tunasync 同步管理器 获取。
+
 ## 项目目标
 - 为校内外用户提供可靠的开源软件镜像服务。
 - 降低网络延迟，提升软件包下载速度。
