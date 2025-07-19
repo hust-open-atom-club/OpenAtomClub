@@ -61,7 +61,7 @@ body {
       position: relative;
       float: left;
       margin-left: 0;
-      margin-right: 0; 
+      margin-right: 0;
       width: 100%;
       clear: both;
     }
@@ -186,7 +186,6 @@ body {
     .wrapper {
       padding-left: 1em;
       padding-right: 1em;
-
 
       @include breakpoint($x-large) {
         max-width: $x-large;
