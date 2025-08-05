@@ -39,5 +39,5 @@ RISC-V Online是一款基于 WebAssembly 的在线 RISC-V 汇编反汇编工具,
 - **优化改进**：优化页面或新增功能。
 
 ## 联系我们
-- **GitHub**：[risc-v](https://github.com/hust-open-atom-club/risc-v)
+- **GitHub**：[risc-v](https://github.com/hust-open-atom-club/riscv-online)
 <!-- - **邮箱**： -->
