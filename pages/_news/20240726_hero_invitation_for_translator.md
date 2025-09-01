@@ -73,6 +73,6 @@ HCTT是“华科开放原子开源俱乐部”的翻译团队，学习“Linux �
     
 - 微信公众号：开源内核安全修炼 或 kernel_sec_pratice
     
-- 官方网站：**hctt.hust.openatom.club**
+- 官方网站：**hctt.openatom.club**
 
 **注：本文采用 KIMI 辅助编写。**

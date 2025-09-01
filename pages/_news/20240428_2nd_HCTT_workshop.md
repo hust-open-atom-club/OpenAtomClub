@@ -24,7 +24,7 @@ header:
 
 1. 本次开源工坊要求基地线下参与，主要任务为：学习和翻译Linux内核文档
 2. HCTT开源仓库地址：https://github.com/hust-open-atom-club/TranslateProject
-3. HCTT官网地址：https://hctt.hust.openatom.club
+3. HCTT官网地址：https://hctt.openatom.club
 4. 请在活动结束之前不要长时间离场；活动结束后会合影留念
 5. 本次活动要求自带电脑，其它硬件设备由活动提供
 6. 参与活动请提前阅读内核文档翻译[1]，并下载 lwn.git 内核仓库[2]
