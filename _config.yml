@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "OpenAtomClub"
 description              : "An amazing website."
-url                      : "https://hust.openatom.club/"
+url                      : "https://hust.openatom.club"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "hust-open-atom-club/OpenAtomClub"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"

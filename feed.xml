@@ -1,0 +1,29 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}</link>
+    <atom:link href="{{ site.url }}feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+
+    <!-- 包含 _posts _news _wiki -->
+      {% assign all_entries = site.posts | concat: site.news | concat: site.wiki %}
+      {% assign all_pages = site.pages | where_exp: "item", "item.path contains '_pages/'" %}
+      {% assign all_entries = all_entries | concat: all_pages %}
+      {% assign sorted_entries = all_entries | sort: "date" | reverse %}
+      {% for item in sorted_entries %}
+        <item>
+          <title>{{ item.title | xml_escape }}</title>
+          <description>{{ item.content | strip_html | xml_escape }}</description>
+          <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
+          <link>{{ site.url }}{{ item.url }}</link>
+          <guid isPermaLink="true">{{ site.url }}{{ item.url }}</guid>
+        </item>
+      {% endfor %}
+  </channel>
+</rss>
