@@ -30,7 +30,7 @@ header:
 - **开发者查询**：支持按开发者姓名或邮箱检索。
 
 ## 如何使用
-1. 访问 [edurank.hust.openatom.club](ttps://edurank.openatom.club/)。
+1. 访问 [edurank.hust.openatom.club](https://edurank.openatom.club/)。
 2. 查看高校排名或搜索特定开发者。
 3. 参考贡献指南，提交你的第一个内核补丁！
 
