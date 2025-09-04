@@ -9,6 +9,8 @@ header:
   actions:
     - label: "GitHub 仓库"
       url: "https://github.com/hust-open-atom-club/TranslateProject"
+    - label: "网站"
+      url: "https://hctt.openatom.club"
 ---
 
 # HCTT 翻译团队
@@ -31,7 +33,7 @@ HCTT（华科开放原子俱乐部翻译团队）继承“Linux 中国”社区�
 1. 访问 [GitHub 仓库](https://github.com/hust-open-atom-club/TranslateProject)。
 2. 认领待翻译文章或提交校对建议。
 3. 遵循团队的翻译规范与流程。
+4. 可在[hcct网站](https://hctt.openatom.club)参考其他成员的工作
 
 ## 联系我们
 - **GitHub**: [TranslateProject](https://github.com/hust-open-atom-club/TranslateProject)
-<!-- - **邮箱**： -->

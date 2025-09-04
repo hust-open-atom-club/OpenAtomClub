@@ -8,7 +8,7 @@ header:
   overlay_filter: 0.25
   actions:
     - label: "访问榜单"
-      url: "https://edurank.hust.openatom.club/"
+      url: "https://edurank.openatom.club"
     - label: "GitHub 仓库"
       url: "https://github.com/hust-open-atom-club/linux-edu-rank"
 ---
@@ -30,7 +30,7 @@ header:
 - **开发者查询**：支持按开发者姓名或邮箱检索。
 
 ## 如何使用
-1. 访问 [edurank.hust.openatom.club](https://edurank.hust.openatom.club/)。
+1. 访问 [edurank.openatom.club](https://edurank.openatom.club/)。
 2. 查看高校排名或搜索特定开发者。
 3. 参考贡献指南，提交你的第一个内核补丁！
 
@@ -40,4 +40,3 @@ header:
 
 ## 联系我们
 - **GitHub**: [linux-edu-rank](https://github.com/hust-open-atom-club/linux-edu-rank)
-<!-- - **邮箱**： -->

@@ -8,7 +8,9 @@ header:
   overlay_filter: 0.25
   actions:
     - label: "GitHub 仓库"
-      url: "https://github.com/hust-open-atom-club/linux-insides-zh"
+      url: "https://github.com/hust-open-atom-club/linux-insides-zh/"
+    - label: "网站"
+      url: "https://docs.openatom.club"
 ---
 
 # Linux 内核揭秘
@@ -29,7 +31,7 @@ header:
 - **设备驱动**：字符设备、块设备驱动模型。
 
 ## 如何阅读
-1. 访问 [GitHub 仓库](https://github.com/hust-open-atom-club/linux-insides-zh) 在线阅读或下载 PDF。
+1. 访问 [GitHub 仓库](https://github.com/hust-open-atom-club/linux-insides-zh)或[网站](https://docs.openatom.club/) 在线阅读或下载 PDF。
 2. 结合内核源码（建议版本 5.x）对照学习。
 3. 参与线下内核代码阅读活动（关注俱乐部公告）。
 
@@ -40,4 +42,3 @@ header:
 
 ## 联系我们
 - **GitHub**: [linux-insides-zh](https://github.com/hust-open-atom-club/linux-insides-zh)
-<!-- - **邮箱**： -->
