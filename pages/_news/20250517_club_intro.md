@@ -3,7 +3,7 @@ title: "华科开放原子俱乐部简介"
 layout: splash
 excerpt: "2025-09-08"
 header:
-overlay_image: /assets/images/index.jpg
+overlay_image: /assets/images/20250908/20250908fmt1.jpg
 overlay_filter: 0.25
 ---
 
@@ -22,14 +22,15 @@ overlay_filter: 0.25
 
 华科开放原子开源俱乐部于2023年6月18日在武汉国家网络安全人才与创新基地[正式授牌成立](https://mp.weixin.qq.com/s?__biz=Mzg4NDQ1NjkyNQ==&mid=2247506548&idx=2&sn=48c1189667db504e7b729515bd0c66d9&scene=21#wechat_redirect)。
 
-![Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtFKYNdKDZ1Y6a5TDseCQQaLajcC82CGgZibibAzjkvdfiaDQ419YXT90rdg/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=0)
+![image](/assets/images/20250908/640.jpg)
 
 
 ## 组织架构与运作模式
 
 俱乐部组织架构如下：
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtF6su3aZFKAreicTuhRyDSmmtTGZo5icuIgfnf4SNzzmtJhY7O2lFInZYQ/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=1)
+![image](/assets/images/20250908/641.jpg)
+
 
 目前俱乐部的日常工作主要由四个部门负责：宣传部、编辑部、技术部，以及综合办公室。下面对各部门进行简要介绍。
 
@@ -62,7 +63,7 @@ overlay_filter: 0.25
 
 华中科技大学开源镜像站
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtFhn3e5SZaLGaK1Hn8vjPbAkx55MtbqEqMwicZxwicK72s4O8tSO3QO5pA/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=2)
+![image](/assets/images/20250908/mxxm1.jpg)
 
 
 Mirror CLI[2]
@@ -70,41 +71,41 @@ Mirror CLI[2]
 
 一键换源的命令行工具：支持 Ubuntu，Debian，Deepin，PyPI 等多个发行版及工具
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtF7rp7a5Naml2nh3NW0x7wtUGl8DF5ARtAue0aicLP0vJ2tIv5zm6JwJQ/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=3)
+![image](/assets/images/20250908/mxxm2.jpg)
 
 RustSBI[3]
 
 针对国产RISC-V架构的安全引导程序项目
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtFeRuqSAuAtlUwIesEcSicxic5U4ia1spcfIp2bpsW908Sjj4Uf79PREFMA/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=4)
+![image](/assets/images/20250908/mxxm3.jpg)
 
 
 Linux内核揭密[4]
 
 分享对 Linux 内核机理的一些浅见，帮助读者理解 Linux 内核机理和其他底层内容。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtF9hfh4jGcibbHPh26WgzLg3WzEKuHWHf6MHib2l08iaB3P4nibpMNY08JLA/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=5)
-
+![image](/assets/images/20250908/mxxm4.jpg)
 
 HCTT翻译团队[5]
 
 HCTT(HUST openatom Club Translation Team) 是“华科开放原子开源俱乐部”的翻译团队
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtFiaYLk1Dz8eDDHtKDCZZcYWxqTFiaSWkIu80LNZYdn9QAuibSBy7bzyXMA/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=6)
+![image](/assets/images/20250908/mxxm5.jpg)
 
 
 pwn.hust.college教育实践平台[6]
 
 一个基于神奇宝贝动画设计的趣味教育平台，供学生团体学习和动手实践网络空间安全安全的核心概念。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtFgUnCSFKJBfWUF9hHEsicNQPicJNMQ6zGkGnwH3SfF0vMckUoaTbwekAQ/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=7)
+![image](/assets/images/20250908/mxxm6.jpg)
 
 
 Linux内核贡献高校排行榜[7]
 
 利用高校域名对 Linux 内核开源贡献进行排行，鼓励大家积极向 Linux 内核开展开源贡献。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtFtW5ibskUrewCkhspXL2vjaXIG5LKzX2m0Ttmia0DbUTNR5ibGBeWDWznw/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=8)
+![image](/assets/images/20250908/mxxm7.jpg)
+
 
 
 
@@ -114,21 +115,22 @@ Linux内核贡献高校排行榜[7]
 
 开源工坊是现场学习和提交贡献的开源社区活动，会场邀请有经验的项目开发者，布置任务和提供指导，即使没有编程语言基础的贡献者也可以完成。活动提供任务需要的硬件设备，领取任务完成后，受邀参与的项目维护者会现场检查和合并 Pull Request。我们俱乐部目前长期举办RustSBI开源工坊、模糊测试理论与工具实践开源工坊和HCTT开源工坊活动（[开源工坊系列](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkxMzUzMzIxMw==&action=getalbum&album_id=3567869663822266370#wechat_redirect)）
 
-![Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtFR38w9lCMrUrlIA7aP6VYf0HUuU2KKZ6FzJDfsAfLCC0ltfCickM8Prw/640?wx_fmt=jpeg&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=9)
+![image](/assets/images/20250908/kygfxl1.jpg)
 
-![Image](https://mmbiz.qpic.cn/sz_mmbiz_png/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtFSHEqquoAx6lGYExLPVaOX5ng9RdeicTaDxCQgznGyictl0iaBME7QhtHw/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=10)
+![image](/assets/images/20250908/kygfxl2.jpg)
 
-![Image](https://mmbiz.qpic.cn/sz_mmbiz_png/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtFQ7xQoqF58ibCkX2uXIuulgdicRb6Kodt6m58G5tXTbNXLpodJyXX7iclw/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=11)
+![image](/assets/images/20250908/kygfxl3.jpg)
+
 
 ### 开源操作系统训练营系列
 
 我们俱乐部和联合清华大学共同发起了2024年秋冬季开源操作系统武汉地区的线下训练营活动，重点聚焦于操作系统内核开发，为了激发同学们对Rust编程语言和操作系统知识的学习热情，俱乐部精心策划了一系列（共八期）线上宣讲会，与线下学习活动同步举行。（[开源操作系统训练营](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkxMzUzMzIxMw==&action=getalbum&album_id=3790590134685319175#wechat_redirect)）
 
-![Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtF528pT0DWLica1Ip7scEOVC1G1yibcfx4bbaFbGxIBbzkaC7LtBL9bhiag/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=12)
+![image](/assets/images/20250908/kyczxtxlyxl1.jpg)
 
-![Image](https://mmbiz.qpic.cn/sz_mmbiz_png/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtFzIoQb7up3zP3DokPkN3lBVqfMBVA6Y8Ck8zcvNvHCn3Ynvas9rJdcg/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=13)
+![image](/assets/images/20250908/kyczxtxlyxl2.jpg)
 
-![Image](https://mmbiz.qpic.cn/sz_mmbiz_png/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtFNMyYlGrr4F8aadNZSG8J0kZmiaJJFJsib7y4QR08vO0XTiceTfwFVJZrw/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=14)
+![image](/assets/images/20250908/kyczxtxlyxl3.jpg)
 
 
 
@@ -136,61 +138,62 @@ Linux内核贡献高校排行榜[7]
 
 俱乐部与deepin社区共同联合举办多次WHLUG线下沙龙活动，为大家提供一个分享Linux相关技术 ，分享开源、开发想法的平台。（[WHLUG沙龙](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkxMzUzMzIxMw==&action=getalbum&album_id=3712982890225909767#wechat_redirect)）
 
-![Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtF52fx4kY1gnIdvbW0WDjxVhSVia3nI7Vz10iauaib04SXhdJDHAkPJMSOQ/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=15)
+![image](/assets/images/20250908/whlugsl1.jpg)
 
-![Image](https://mmbiz.qpic.cn/sz_mmbiz_png/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtFI7y2OmdYBNs0LPquypMibCicwGMWyUxyBuV8oPsQRl9zmVQ5uPN7Gm8w/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=16)
+![image](/assets/images/20250908/whlugsl2.jpg)
 
-![Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtFZCU0Yia6Zkv0R5CYL5iaicgPFE5s5jgiaAiac56s6UDpnRnicNKBrzRQNQcA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=17)
+![image](/assets/images/20250908/whlugsl3.jpg)
 
 ### 其他精彩活动
 
 #### ***第十九届Linux内核开发者大会***
 
-俱乐部指导教师组织第十九届中国 Linux 内核开发者大会（CLK ），为大会撰写宣传推文，组织论坛活动开展。CLK 以“自由、协作、创新”为理念，以开源技术的推广和普及为使命，旨在促进 Linux 内核开发爱好者相互交流，共同进步。（[第十九届Linux内核开发者大会](https://mp.weixin.qq.com/s?__biz=MzkxMzUzMzIxMw==&mid=2247485252&idx=1&sn=7d8023a7e47b29684c83b1231eae0664&scene=21#wechat_redirect)）![Image](https://mmbiz.qpic.cn/sz_mmbiz_png/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtF3LAVvVeZQHIexmNq305LaubOswE03DNESY3tV05m3j4xRia24TvZyEQ/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=18)
+俱乐部指导教师组织第十九届中国 Linux 内核开发者大会（CLK ），为大会撰写宣传推文，组织论坛活动开展。CLK 以“自由、协作、创新”为理念，以开源技术的推广和普及为使命，旨在促进 Linux 内核开发爱好者相互交流，共同进步。（[第十九届Linux内核开发者大会](https://mp.weixin.qq.com/s?__biz=MzkxMzUzMzIxMw==&mid=2247485252&idx=1&sn=7d8023a7e47b29684c83b1231eae0664&scene=21#wechat_redirect)）
+
+![image](/assets/images/20250908/jchd1.jpg)
+
 
 #### ***2024 CCF中国开源大会可信开源生态分论坛***
 
 承办 CCF中国开源大会可信开源生态分论坛，组织开展关于可信开源生态建设问题的讨论，聚焦开源软件安全漏洞治理、软件供应链安全风险和开源社区治理三大挑战。（[可信开源生态分论坛承办](https://mp.weixin.qq.com/s?__biz=MzkxMzUzMzIxMw==&mid=2247485554&idx=1&sn=8af60eeff57c786de5bf86824f2c5f9d&token=1136141739&lang=zh_CN&scene=21#wechat_redirect)）
 
-![Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtFnM0Rlqdia8C3v7iaUIKwSVYMURsJ53z9899v4ff4VFkv4ibAZ4sUXiaWrg/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=19)
+![image](/assets/images/20250908/jchd2.jpg)
+
 
 #### ***2024开放原子开发者大会高校开源开发者培养分论坛***
 
 由俱乐部慕冬亮老师主持，邀请到来自社区、企业和其他高校的众多嘉宾，探讨如何引导更多大学师生成为高校开发者，分享如何通过开源项目和实践提升学生的实践能力与创新思维。（[高校开源开发者培养分论坛承办](https://mp.weixin.qq.com/s?__biz=MzkxMzUzMzIxMw==&mid=2247486007&idx=1&sn=3b7b3ba79792e65611ba43b320f8de83&scene=21#wechat_redirect)）
 
-![Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtF3jCkb7AziaTmKH3nHgTk45Useg8on8J39UWxIhdibWNhGWKRUiaKQ5IYw/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=20)
+![image](/assets/images/20250908/jchd3.jpg)
 
 ### 俱乐部官方账号
 
 bilibili账号：华科开放原子俱乐部[8]
 
-![Image](https://mmbiz.qpic.cn/sz_mmbiz_png/K8s1Ua2qgLic1iaic9G1ThialwicL1QNAicMtF0lNneom4OJ0IPVQFsfvhLFc5RjcFTK5KHdqGibxLMN8amycW9GC1CSw/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=21)
+![image](/assets/images/20250908/bilibiliaccount.jpg)
 
 
 微信公众号：开源内核安全修炼
+
+[阅读原文](https://wj.qq.com/s2/14595910/5gvp/)
 
 
 
 ### 参考资料
 
-💻HUST Mirror: https://github.com/hust-open-atom-club/hust-mirrors
+[1] 💻HUST Mirror: https://github.com/hust-open-atom-club/hust-mirrors
 
+[2] Mirror CLI: https://github.com/hust-open-atom-club/hustmirror-cli
 
-Mirror CLI: https://github.com/hust-open-atom-club/hustmirror-cli
+[3] RustSBI: https://github.com/hust-open-atom-club/rustsbi
 
+[4] Linux内核揭密: https://github.com/hust-open-atom-club/linux-insides-zh/
 
-RustSBI: https://github.com/hust-open-atom-club/rustsbi
+[5] HCTT翻译团队: https://github.com/hust-open-atom-club/TranslateProject
 
+[6] pwn.hust.college教育实践平台: https://github.com/hust-open-atom-club/dojo/
 
-Linux内核揭密: https://github.com/hust-open-atom-club/linux-insides-zh/
+[7] Linux内核贡献高校排行榜: https://github.com/hust-open-atom-club/linux-edu-rank/
 
+[8] 华科开放原子俱乐部: https://space.bilibili.com/3537107102468877?spm_id_from=333.337.0.0
 
-HCTT翻译团队: https://github.com/hust-open-atom-club/TranslateProject
-
-
-pwn.hust.college教育实践平台: https://github.com/hust-open-atom-club/dojo/
-
-
-Linux内核贡献高校排行榜: https://github.com/hust-open-atom-club/linux-edu-rank/
-
-华科开放原子俱乐部: https://space.bilibili.com/3537107102468877?spm_id_from=333.337.0.0
