@@ -4,7 +4,7 @@ title: "pwn.hust.college"
 permalink: /projects/dojo/
 excerpt: "基于神奇宝贝的网络安全教育平台"
 header:
-  overlay_image: /assets/images/pokemon_animation.png
+  overlay_image: /assets/images/20250923_pwn.hust.college/pokemon_animation.png
   overlay_filter: 0.25
   actions:
     - label: "访问平台"

@@ -8,7 +8,7 @@ header:
 ---
 随着越来越多的同学们加入到我们开源俱乐部的日常组织和活动中来，本俱乐部的组织架构也日趋完善，现将俱乐部最新组织架构公布如下：
 
-![image](/assets/images/OpenAtomClub_Orgnization_structure.jpg)
+![image](/assets/images/20240516_type/20240516_type_OpenAtomClub_Orgnization_structure.jpg)
 
 <center>俱乐部组织架构及各部门主要成员</center>
 

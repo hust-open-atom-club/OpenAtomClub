@@ -32,16 +32,16 @@ header:
 
 扫描下方二维码立即报名：
 
-![活动报名二维码](/assets/images/signup_QRcode.png)
+![活动报名二维码](/assets/images/20240926_kaiyuan/20240926_kaiyuansignup_QRcode.png)
 
 ### step 2:加入QQ群
 
 扫描下方二维码进群：
 
-![活动QQ群二维码](/assets/images/QQgroup_QRcode.jpg)
+![活动QQ群二维码](/assets/images/20240926_kaiyuan/20240926_kaiyuanQQgroup_QRcode.jpg)
 
 训练营详情：[2024秋冬季开源操作系统训练营报名开启](https://mp.weixin.qq.com/s?__biz=MzI0OTcwMDk2MQ==&mid=2247484495&idx=1&sn=bd496d6cf835ae3f8bdd5fec16f1891e&scene=21&token=1890778131&lang=zh_CN#wechat_redirect)
 
 ## 欢迎转发/张贴海报
 
-![活动宣传海报](/assets/images/poster2.png)
+![活动宣传海报](/assets/images/20240926_kaiyuan/20240926_kaiyuanposter2.png)

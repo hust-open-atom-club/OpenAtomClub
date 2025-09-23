@@ -27,7 +27,7 @@ header:
 **活动地点：** 武汉市洪山区珞喻路1037号-华中科技大学 南五楼 6楼 613室
 
 
-<img src="/assets/images/QRcode_WHLUG_202405.png" width="300" height="300" >
+<img src="/assets/images/20240927_new/QRcode_WHLUG_202405.png" width="300" height="300" >
 
 ## 活 动 报 名
 

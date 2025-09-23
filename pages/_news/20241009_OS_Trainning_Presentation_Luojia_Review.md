@@ -14,7 +14,7 @@ header:
 
 ## 二、华科大开放原子开源俱乐部简介
 
-![img](/assets/images/jingtianyi.png)
+![img](/assets/images/20241009_club/20241009_club_jingtianyi.png)
 
 
 本次线上宣讲活动由华科大开放原子开源俱乐部主办，由华科大开放原子开源俱乐部指导老师慕冬亮老师和俱乐部学生负责人景天一同学，介绍华科大开放原子开源俱乐部。
@@ -29,11 +29,11 @@ header:
 
 **招新微信群**
 
-![img](/assets/images/QRcode_recruitment.png)
+![img](/assets/images/20241009_club/20241009_club_QRcode_recruitment.png)
 
 **俱乐部公众号**
 
-![img](/assets/images/QRcode_oc.jpg)
+![img](/assets/images/20241009_club/20241009_club_QRcode_oc.jpg)
 
 ## 三、洛佳《让我们试试 RustSBI》
 
