@@ -4,7 +4,7 @@ title: "HUST Mirror"
 permalink: /projects/hust-mirrors/
 excerpt: "华中科技大学开源镜像站"
 header:
-  overlay_image: /assets/images/hust-mirror-bar.png
+  overlay_image: /assets/images/20250923_hust-mirrors/20250923_hust-mirrors_bar.png
   overlay_filter: 0.25
   actions:
     - label: "访问镜像站"

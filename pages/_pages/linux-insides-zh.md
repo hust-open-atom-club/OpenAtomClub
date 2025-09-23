@@ -4,7 +4,7 @@ title: "Linux 内核揭秘"
 permalink: /projects/linux-insides-zh/
 excerpt: "Linux 内核机制深度解析"
 header:
-  overlay_image: /assets/images/linux-cover.png
+  overlay_image: /assets/images/20250923_linux/20250923_linux_linux-cover.png
   overlay_filter: 0.25
   actions:
     - label: "GitHub 仓库"

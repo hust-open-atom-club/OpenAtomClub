@@ -4,7 +4,7 @@ title: "Linux 内核高校排行榜"
 permalink: /projects/rank/
 excerpt: "全球高校 Linux 内核贡献统计"
 header:
-  overlay_image: /assets/images/linux-edu-rank.png
+  overlay_image: /assets/images/20250923_rank/20250923_rank_linux-edu-rank.png
   overlay_filter: 0.25
   actions:
     - label: "访问榜单"

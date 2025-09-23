@@ -19,4 +19,4 @@ excerpt: "俱乐部联系方式"
 ID：kernel_sec_pratice
 Name：开源内核安全修炼
 
-![公众号](/assets/images/QRcode_oc.jpg)
+![公众号](/assets/images/20241009_club/20241009_club_QRcode_oc.jpg)

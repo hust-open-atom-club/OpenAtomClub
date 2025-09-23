@@ -3,7 +3,7 @@ title: "开源交流新据点：Discord 社区上线啦"
 layout: splash
 excerpt: "2025-08-28"
 header:
-  overlay_image: /assets/images/what-is-discord.jpg
+  overlay_image: /assets/images/20250828_Discord/20250828_Discord_discord_what-is-discord.jpg
   overlay_filter: 0.25
 ---
 
@@ -13,7 +13,7 @@ header:
 
 亲爱的俱乐部成员和开源爱好者们，大家好！
 为了突破 QQ、飞书等应用的局限，让更多小伙伴能够无障碍地与全球开源爱好者交流，我们正式建立了 **Discord 社区服务器**！
-![image](/assets/images/discord_screenshot.png)
+![image](/assets/images/20250828_Discord/20250828_Discord_discord_screenshot.png)
 
 ---
 

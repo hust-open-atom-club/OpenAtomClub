@@ -4,7 +4,7 @@ title: "OSEDDL"
 permalink: /projects/oseddl/
 excerpt: "开源会议与竞赛截止日期一览"
 header:
-  overlay_image: /assets/images/oseddl-cover.png
+  overlay_image: /assets/images/20250623_OSEDDL/20250623_OSEDDL_oseddl-cover.png
   overlay_filter: 0.25
   actions:
     - label: "访问平台"
