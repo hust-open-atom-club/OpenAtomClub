@@ -7,7 +7,7 @@ header:
   overlay_filter: 0.25
 ---
 
-![image](/assets/images/0525WHLUG1.png)
+![image](/assets/images/20240524_Linuxer/0525WHLUG_poster.jpg)
 
 Hi，Linuxer！
 
@@ -19,7 +19,7 @@ Hi，Linuxer！
 
 > **议程剧透**
 
-![image](/assets/images/0525WHLUG2.png)
+![image](/assets/images/20240524_Linuxer/0525WHLUG1.png)
 
 Ps. 现场超多惊喜环节，更有 deepin 精美周边等你来~
 

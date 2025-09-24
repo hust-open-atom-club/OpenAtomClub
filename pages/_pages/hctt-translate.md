@@ -4,7 +4,7 @@ title: "HCTT 翻译团队"
 permalink: /projects/hcct-translate/
 excerpt: "HUST openatom Club Translation Team"
 header:
-  overlay_image: /assets/images/hcct-bar.png
+  overlay_image: /assets/images/20250923_HCTT/20250623_HCTT_hcct-bar.png
   overlay_filter: 0.25
   actions:
     - label: "GitHub 仓库"

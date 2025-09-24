@@ -18,7 +18,7 @@ header:
 
 ## 嘉宾简介
 
-![img](/assets/images/luojia.png)
+![img](/assets/images/20241006_luojia/luojia.png)
 
 
 洛佳（蒋周奇），华中科技大学网络空间安全学院硕士研究生。长期致力于为产业、教学和科研界推广 Rust 语言和 RISC-V 指令集架构生态。热爱开发嵌入式软件和系统软件，是 RustSBI 项目的维护者。

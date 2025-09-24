@@ -54,4 +54,4 @@ header:
 
 招新微信群二维码
 
-![招新微信群二维码](/assets/images/QRcode_recruitment.png)
+![招新微信群二维码](/assets/images/20241009_club/20241009_club_QRcode_recruitment.png)

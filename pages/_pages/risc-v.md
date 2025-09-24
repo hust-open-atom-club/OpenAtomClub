@@ -4,7 +4,7 @@ title: "RISC-V Online"
 permalink: /projects/risc-v/
 excerpt: "在线RISC-V汇编反汇编工具"
 header:
-  overlay_image: /assets/images/riscv-online-cover.png
+  overlay_image: /assets/images/20250923_RISC-V/20250923_RISC-V_riscv-online-cover.png
   overlay_filter: 0.25
   actions:
     - label: "访问平台"

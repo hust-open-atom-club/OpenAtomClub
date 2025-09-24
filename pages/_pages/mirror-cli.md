@@ -4,7 +4,7 @@ title: "Mirror CLI"
 permalink: /projects/mirror-cli/
 excerpt: "一键换源的命令行工具"
 header:
-  overlay_image: /assets/images/mirrorcli-cover.png
+  overlay_image: /assets/images/20250923_MirrorCLI/20250923_MirrorCLI_mirrorcli-cover.png
   overlay_filter: 0.25
   actions:
     - label: "GitHub 仓库"
