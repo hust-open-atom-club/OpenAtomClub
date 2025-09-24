@@ -1,7 +1,7 @@
 ---
 title: "华科开放原子俱乐部简介"
 layout: splash
-excerpt: "2025-09-08"
+excerpt: "2025-05-17"
 header:
 overlay_image: /assets/images/20250908/20250908fmt1.jpg
 overlay_filter: 0.25
