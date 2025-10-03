@@ -4,7 +4,7 @@ main:
     url: /news/
   - title: '<i class="fas fa-book"></i> Wiki'
     url: /wiki/
-  - title: '<i class="fas fa-book"></i> joinus'
+  - title: '<i class="fas fa-fw fa-link"></i> joinus'
     url: /wiki/joinus/
   - title: '<i class="fas fa-globe"></i> HCTT'
     url: https://hctt.openatom.club/
