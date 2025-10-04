@@ -16,8 +16,10 @@ excerpt: "加入我们"
 - 外校同学也欢迎参加
 
 **邮箱**：openatom_club@hust.edu.cn  
-**GitHub**：[https://github.com/hust-open-atom-club](https://github.com/hust-open-atom-club)支持Github issue的形式加入贡献。
-
+**GitHub**：[https://github.com/hust-open-atom-club](https://github.com/hust-open-atom-club)
+  - 贡献方式：
+    - 直接提交 PR（无需关联 Issue）
+    - 通过 Issue 反馈问题和建议
 ---
 
 期待你的加入，一起共建开源社区！
