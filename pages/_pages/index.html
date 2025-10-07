@@ -122,29 +122,42 @@ header:
       </a>
       <!-- bold and em-->
       <b><p>华中科技大学开源镜像站</p></b>
+      <div class="github-link">
+        <a href="https://github.com/hust-open-atom-club/hust-mirrors" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
     </div>
+
     <div class="item">
       <a href="/projects/oseddl/">
         <img src="/assets/images/20250623_OSEDDL/20250623_OSEDDL_oseddl-cover.png" alt="Open Source Event Deadlines">
         <h3>🗓️ Open Source Event Deadlines</h3>
       </a>
       <p>开源活动、会议和竞赛一站式展示</p>
+      <div class="github-link">
+        <a href="https://github.com/hust-open-atom-club/open-source-deadlines" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
     </div>
   </div>
 </div>
-
-
-
 
 <div align="center">
   <div class="custom-carousel">
     <div class="item">
       <a href="/projects/hcct-translate">
-        <img src="/assets/images/20250923_HCTT/20250623_HCTT_HCTT-cover.png" alt="HCTT">
+        <img src="/assets/images/20240726_HCTT/0726index.png" alt="HCTT">
         <h3>🌐 HCTT 翻译团队</h3>
       </a>
       <!-- bold and em-->
-      <p>HCTT(HUST openatom Club Translation Team) 是“华科开放原子开源俱乐部”的翻译团队<br></p>
+      <p>HCTT(HUST openatom Club Translation Team) 是"华科开放原子开源俱乐部"的翻译团队<br></p>
+      <div class="github-link">
+        <a href="https://github.com/hust-open-atom-club/TranslateProject" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
     </div>
 
     <div class="item">
@@ -153,6 +166,11 @@ header:
         <h3>📖 Linux 内核揭秘</h3>
       </a>
       <p>分享对 Linux 内核机理的一些浅见，帮助读者理解 Linux 内核机理和其他底层内容。</p>
+      <div class="github-link">
+        <a href="https://github.com/hust-open-atom-club/linux-insides-zh" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -166,6 +184,11 @@ header:
       </a>
       <!-- bold and em-->
       <p>一个基于神奇宝贝动画设计的趣味教育平台，供学生团体学习和动手实践网络空间安全安全的核心概念。<br></p>
+      <div class="github-link">
+        <a href="https://github.com/hust-open-atom-club/dojo" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
     </div>
     <div class="item">
       <a href="/projects/rank">
@@ -173,6 +196,11 @@ header:
         <h3>🎓 Linux 内核高校贡献排行榜</h3>
       </a>
       <p>利用高校域名对 Linux 内核开源贡献进行排行，鼓励大家积极向 Linux 内核开展开源贡献。</p>
+      <div class="github-link">
+        <a href="https://github.com/hust-open-atom-club/linux-edu-rank" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -186,6 +214,11 @@ header:
       </a>
       <!-- bold and em-->
       <p>一键换源的命令行工具：支持 Ubuntu，Debian，Deepin，PyPI，crates 等多个发行版及工具 <br></p>
+      <div class="github-link">
+        <a href="https://github.com/hust-open-atom-club/hustmirror-cli" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
     </div>
     <div class="item">
       <a href="/projects/risc-v">
@@ -193,12 +226,14 @@ header:
         <h3>🎓 RISC-V Online</h3>
       </a>
       <p>一款基于 WebAssembly 的在线 RISC-V 汇编反汇编工具，方便学习和实践 RISC-V 技术</p>
+      <div class="github-link">
+        <a href="https://github.com/hust-open-atom-club/riscv-online" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
     </div>
   </div>
 </div>
-
-
-
 
 <style scoped>
   /* every item is in column, left introduction and right imgs */
@@ -216,8 +251,6 @@ header:
     height: 100%;
     max-height: 100%;
     background-color: #ffffff;
-    /* let the top of the item in it align */
-    /* align-items: flex-start; */
   }
 
   /* add hover effect for item */
@@ -228,16 +261,13 @@ header:
     justify-content: start;
     align-items: center;
     margin: 10px;
-    /* padding: 10px; */
     border: 1px solid #e9ecef;
     border-radius: 5px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     transition: all 0.3s;
   }
 
   /* add hover effect for item */
   .item:hover {
-    /* transform: scale(1.05); */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0);
   }
   
@@ -250,7 +280,7 @@ header:
     margin: .5em;
   }
 
-    .services-container {
+  .services-container {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
@@ -330,5 +360,30 @@ header:
 .service-item:hover .service-icon i.material-icons {
   transform: scale(1.1);
 }
- 
+
+.github-link {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.github-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #333;
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  background: #f6f8fa;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.github-link a:hover {
+  background: #e1e4e8;
+  color: #000;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 </style>
