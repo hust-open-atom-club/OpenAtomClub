@@ -1,9 +1,9 @@
 ---
 title: 2025年“开源安全奖励计划”工作正式启动！
 layout: splash
-excerpt: 2025-10-14 08:49:32
+excerpt: 2025-10-14
 header:
-  overlay_image: /assets/images/default-header.jpg
+  overlay_image: /assets/images/index.jpg
   overlay_filter: 0.25
 ---
 
@@ -16,25 +16,19 @@ header:
 在2024年的开源安全奖励计划中，我们俱乐部成员表现卓越，累计44人次荣获嘉奖，其中包括：
 
 - 一等奖2项
-
 - 二等奖9项
-
 - 三等奖11项
 
 俱乐部指导老师**慕冬亮、付才、李珍**凭借出色的指导工作，荣获优秀指导老师称号。
-
-详情见：[喜报 | 俱乐部师生在2024年开源安全奖励计划中荣获多项奖励](https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HHYe7mijjRcLLANQmD8TFuT6lojZoduwxJW_w_Ly&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzkxMzUzMzIxMw%3D%3D%26mid%3D2247487290%26idx%3D1%26sn%3Ddc736a09f4cfaa0149e0dd20a613efdb%26scene%3D21#wechat_redirect)
+详情见：[喜报! 俱乐部师生在2024年开源安全奖励计划中荣获多项奖励](https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HHYe7mijjRcLLANQmD8TFuT6lojZoduwxJW_w_Ly&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzkxMzUzMzIxMw%3D%3D%26mid%3D2247487290%26idx%3D1%26sn%3Ddc736a09f4cfaa0149e0dd20a613efdb%26scene%3D21#wechat_redirect)
 
 ### 亮点纷呈：2025年计划全面升级
 
 2025年开源安全奖励计划设立四大核心赛道：
 
 - 原创开源软件
-
 - 开源漏洞挖掘
-
 - 开源软件重写
-
 - 国内开源社区贡献（今年进一步扩大了贡献范围）
 
 同时，组委会广泛听取各方意见，对赛程进行了优化调整，全部赛程预计于2026年5月底前完成，节奏更紧凑，体验更佳。

@@ -1,9 +1,9 @@
 ---
 title: 开源活动速递 (2025年10月05日)
 layout: splash
-excerpt: 2025-10-14 07:51:32
+excerpt: 2025-10-14
 header:
-  overlay_image: /assets/images/20251014/开源活动速递 (2025年10月05日)_001.jpg
+  overlay_image: /assets/images/index.jpg
   overlay_filter: 0.25
 ---
 
@@ -32,7 +32,6 @@ header:
 活动链接: https://mp.weixin.qq.com/s/BIwPL11fWPO1WRRZ1-Tecw
 
 
-
 ## 开源比赛
 
 ### Godot x openKylin 全国开发大赛
@@ -58,7 +57,6 @@ header:
 活动链接: https://competition.atomgit.com/competitionInfo?id=67a2bfabddf910caee6f422ed8760bf0
 
 
-
 ### CIE - 玄铁杯 RISC-V 应用创新比赛
 
 活动描述: 为了推动 RISC-V 技术的创新和应用，中国电子学会组织发起了首届 CIE 全国 RISC-V 高水平创新和应用大赛。作为大赛副主席单位，达摩院（上海）科技有限公司与杭州电子科技大学、龙蜥社区联合命题，设立「CIE - 玄铁杯 RISC-V 应用创新比赛」，邀请全球开发者、高校团队及企业，与我们共同探索 RISC-V 的无限可能。
@@ -70,8 +68,7 @@ header:
 活动链接: https://rv.cie.org.cn/direction?id=3
 
 
-
-### ### QEMU 训练营 2025
+### QEMU 训练营 2025
 
 活动描述: QEMU 训练营 2025 由格维开源社区（GTOC）主办， OpenCamp 训练营协办，现已开启报名通道，面向对 QEMU 感兴趣的开发者和学习者。训练营旨在通过系统的课程和实践项目，帮助学员深入理解和掌握 QEMU 的使用与开发，提升虚拟化技术能力。
 
@@ -80,6 +77,7 @@ header:
 关键截止日期: 2025-10-12 00:00 (上海时间) - 训练营开始
 
 活动链接: https://mp.weixin.qq.com/s/XKfIv0Qjduq8JeHIiQBtrg
+
 
 ## 开源会议
 
