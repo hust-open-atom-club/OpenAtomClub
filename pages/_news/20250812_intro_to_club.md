@@ -102,10 +102,17 @@ Daily operations are managed by four departments: **Publicity Department**, **Ed
 ## Related Links
 
 [1] [HUST Mirror:](https://github.com/hust-open-atom-club/hust-mirrors)  
+
 [2] [Mirror CLI](https://github.com/hust-open-atom-club/hustmirror-cli)  
+
 [3] [RustSBI](https://github.com/hust-open-atom-club/rustsbi)  
+
 [4] [Linux Kernel Insights](https://github.com/hust-open-atom-club/linux-insides-zh/)  
+
 [5] [HCTT Translation Team](https://github.com/hust-open-atom-club/TranslateProject)  
+
 [6] [pwn.hust.college Educational Platform](https://github.com/hust-open-atom-club/dojo/) 
+
 [7] [University Ranking for Linux Kernel Contributions](https://github.com/hust-open-atom-club/linux-edu-rank/)  
+
 [8] [HUST OpenAtom Club](https://space.bilibili.com/3537107102468877?spm_id_from=333.337.0.0)
