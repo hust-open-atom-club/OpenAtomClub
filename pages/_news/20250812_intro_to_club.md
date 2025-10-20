@@ -101,7 +101,7 @@ Daily operations are managed by four departments: **Publicity Department**, **Ed
 
 ## Related Links
 
-[1] [HUST Mirror:](https://github.com/hust-open-atom-club/hust-mirrors)  
+[1] [HUST Mirror](https://github.com/hust-open-atom-club/hust-mirrors)  
 
 [2] [Mirror CLI](https://github.com/hust-open-atom-club/hustmirror-cli)  
 
