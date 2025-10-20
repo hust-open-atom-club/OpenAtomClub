@@ -21,11 +21,15 @@ The HUST OpenAtom Open Source Club is an active community dedicated to promoting
 
 ## Establishment and Inauguration
 
-The HUST OpenAtom Open Source Club was officially inaugurated on **June 18, 2023**, at the **Wuhan National Cybersecurity Center for education and innovation**.
+The HUST OpenAtom Open Source Club was [officially inaugurated](https://mp.weixin.qq.com/s/qb5A7GTT5tvPq8_a-h0H7Q) on **June 18, 2023**, at the **Wuhan National Cybersecurity Center for education and innovation**.
+
+![640](/assets/images/20250908/640.jpg)
 
 ## Organizational Structure and Operating Model
 
 The club's structure is shown below:
+
+![641](/assets/images/20250908/641.jpg)
 
 Daily operations are managed by four departments: **Publicity Department**, **Editorial Department**, **Technical Department**, and **General Office**. A brief introduction to each:
 
@@ -97,11 +101,11 @@ Daily operations are managed by four departments: **Publicity Department**, **Ed
 
 ## Related Links
 
-[1] HUST Mirror: https://github.com/hust-open-atom-club/hust-mirrors  
-[2] Mirror CLI: https://github.com/hust-open-atom-club/hustmirror-cli  
-[3] RustSBI: https://github.com/hust-open-atom-club/rustsbi  
-[4] Linux Kernel Insights: https://github.com/hust-open-atom-club/linux-insides-zh/  
-[5] HCTT Translation Team: https://github.com/hust-open-atom-club/TranslateProject  
-[6] pwn.hust.college Educational Platform: https://github.com/hust-open-atom-club/dojo/  
-[7] University Ranking for Linux Kernel Contributions: https://github.com/hust-open-atom-club/linux-edu-rank/  
-[8] HUST OpenAtom Club: https://space.bilibili.com/3537107102468877?spm_id_from=333.337.0.0
+[1] [HUST Mirror:](https://github.com/hust-open-atom-club/hust-mirrors)  
+[2] [Mirror CLI](https://github.com/hust-open-atom-club/hustmirror-cli)  
+[3] [RustSBI](https://github.com/hust-open-atom-club/rustsbi)  
+[4] [Linux Kernel Insights](https://github.com/hust-open-atom-club/linux-insides-zh/)  
+[5] [HCTT Translation Team](https://github.com/hust-open-atom-club/TranslateProject)  
+[6] [pwn.hust.college Educational Platform](https://github.com/hust-open-atom-club/dojo/) 
+[7] [University Ranking for Linux Kernel Contributions](https://github.com/hust-open-atom-club/linux-edu-rank/)  
+[8] [HUST OpenAtom Club](https://space.bilibili.com/3537107102468877?spm_id_from=333.337.0.0)
