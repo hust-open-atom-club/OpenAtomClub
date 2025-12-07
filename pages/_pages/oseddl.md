@@ -10,7 +10,7 @@ header:
     - label: "访问平台"
       url: "https://oseddl.openatom.club/"
     - label: "GitHub 仓库"
-      url: "https://github.com/hust-open-atom-club/oseddl"
+      url: "https://github.com/hust-open-atom-club/open-source-deadlines"
 ---
 
 # Open Source Event Deadlines (OSEDDL)
@@ -40,5 +40,5 @@ OSEDDL 汇总全球顶级开源会议（如 FOSDEM、LPC）、黑客松（Google
 - **前端开发**：优化交互界面或新增筛选功能。
 
 ## 联系我们
-- **GitHub**: [oseddl](https://github.com/hust-open-atom-club/oseddl)
+- **GitHub**: [open-source-deadlines](https://github.com/hust-open-atom-club/open-source-deadlines)
 <!-- - **邮箱**： -->
