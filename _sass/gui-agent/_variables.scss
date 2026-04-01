@@ -1,0 +1,39 @@
+// GUI-Agent Variables
+// 颜色配置 - 现代蓝色系
+$ga-primary: #3b82f6 !default;        // 现代蓝
+$ga-primary-light: #60a5fa !default;   // 浅蓝
+$ga-primary-dark: #2563eb !default;    // 深蓝
+
+$ga-success: #10b981 !default;
+$ga-warning: #f59e0b !default;
+$ga-error: #ef4444 !default;
+$ga-info: #3b82f6 !default;
+
+$ga-bg: rgba(255, 255, 255, 0.95) !default;
+$ga-bg-dark: rgba(30, 30, 40, 0.95) !default;
+$ga-text: #1f2937 !default;
+$ga-text-dark: #f3f4f6 !default;
+$ga-border: #e5e7eb !default;
+$ga-border-dark: #374151 !default;
+
+// 尺寸
+$ga-cursor-size: 60px !default;
+$ga-cursor-dot-size: 12px !default;
+$ga-panel-width: 380px !default;
+$ga-panel-min-width: 300px !default;
+$ga-panel-max-width: 600px !default;
+
+// 动画
+$ga-transition-fast: 0.15s ease !default;
+$ga-transition-normal: 0.3s ease !default;
+$ga-transition-slow: 0.6s ease !default;
+
+// 阴影
+$ga-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1) !default;
+$ga-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12) !default;
+$ga-shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.15) !default;
+
+// z-index 层级
+$ga-z-cursor: 999999 !default;
+$ga-z-panel: 999998 !default;
+$ga-z-toggle: 999997 !default;

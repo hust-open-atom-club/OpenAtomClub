@@ -1,0 +1,104 @@
+// 通用动画定义
+@keyframes ga-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ga-fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes ga-slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes ga-slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes ga-scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes ga-shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+@keyframes ga-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// 工具类
+.ga-animate-fadeIn {
+  animation: ga-fadeIn $ga-transition-normal;
+}
+
+.ga-animate-fadeOut {
+  animation: ga-fadeOut $ga-transition-normal;
+}
+
+.ga-animate-slideUp {
+  animation: ga-slideUp $ga-transition-normal;
+}
+
+.ga-animate-slideDown {
+  animation: ga-slideDown $ga-transition-normal;
+}
+
+.ga-animate-scaleIn {
+  animation: ga-scaleIn $ga-transition-normal;
+}
+
+.ga-animate-shake {
+  animation: ga-shake 0.4s;
+}
+
+.ga-animate-spin {
+  animation: ga-spin 1s linear infinite;
+}

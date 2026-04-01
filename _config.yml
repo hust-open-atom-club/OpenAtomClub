@@ -281,6 +281,20 @@ compress_html:
   ignore:
     envs: development
 
+# GUI Agent Configuration
+gui_agent:
+  enabled: true
+  auto_start: false
+  theme: "auto"
+  position: "bottom-right"
+  shortcuts:
+    toggle: "Ctrl+Shift+A"
+    cancel: "Escape"
+
+# Footer Scripts
+after_footer_scripts:
+  - /assets/js/gui-agent.min.js
+
 
 # Defaults
 defaults:
