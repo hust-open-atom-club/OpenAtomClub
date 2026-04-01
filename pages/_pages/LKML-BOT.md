@@ -4,7 +4,7 @@ title: "LKML-BOT"
 permalink: /projects/lkml-bot/
 excerpt: "Linux 内核邮件列表智能监控机器人"
 header:
-  overlay_image: pages/_pages/image/LKML-BOT/feishu.png
+  overlay_image: /pages/_pages/image/LKML-BOT/feishu.png
   overlay_filter: 0.25
   actions:
     - label: "GitHub 仓库"
