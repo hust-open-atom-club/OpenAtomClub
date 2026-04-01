@@ -1,0 +1,152 @@
+// 大鼠标样式
+.ga-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: $ga-z-cursor;
+  transform: translate(-50%, -50%);
+  transition: opacity $ga-transition-normal;
+  will-change: transform;
+
+  &.ga-hidden {
+    display: none !important;
+  }
+
+  // 外圈
+  &-ring {
+    width: $ga-cursor-size;
+    height: $ga-cursor-size;
+    border: 2px solid rgba($ga-primary, 0.6);
+    border-radius: 50%;
+    animation: ga-pulse 2s infinite ease-in-out;
+    transition: all $ga-transition-fast;
+  }
+
+  // 内点
+  &-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: $ga-cursor-dot-size;
+    height: $ga-cursor-dot-size;
+    background: $ga-primary;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba($ga-primary, 0.5);
+  }
+
+  // 涟漪
+  &-ripple {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: $ga-cursor-size;
+    height: $ga-cursor-size;
+    border: 3px solid rgba($ga-primary, 0);
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  // 悬停状态
+  &--hover {
+    .ga-cursor-ring {
+      transform: scale(1.2);
+      border-color: rgba($ga-primary, 0.8);
+      animation: ga-pulse-hover 1.5s infinite ease-in-out;
+    }
+
+    .ga-cursor-dot {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+
+  // 点击状态
+  &--clicking {
+    .ga-cursor-ring {
+      animation: none;
+    }
+  }
+
+  // 成功图标
+  &-success {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: $ga-success;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba($ga-success, 0.5);
+    pointer-events: none;
+  }
+
+  // 错误图标
+  &-error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: $ga-error;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba($ga-error, 0.5);
+    pointer-events: none;
+  }
+}
+
+// 动画定义
+@keyframes ga-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+@keyframes ga-pulse-hover {
+  0%, 100% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.25);
+    opacity: 1;
+  }
+}
+
+@keyframes ga-ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+    border-color: rgba($ga-primary, 0.8);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.5);
+    opacity: 0;
+    border-color: rgba($ga-primary, 0);
+  }
+}
+
+// 暗色主题
+@media (prefers-color-scheme: dark) {
+  .ga-cursor {
+    &-ring {
+      border-color: rgba($ga-primary-light, 0.6);
+    }
+
+    &-dot {
+      background: $ga-primary-light;
+      box-shadow: 0 0 8px rgba($ga-primary-light, 0.5);
+    }
+
+    &--hover .ga-cursor-ring {
+      border-color: rgba($ga-primary-light, 0.8);
+    }
+  }
+}

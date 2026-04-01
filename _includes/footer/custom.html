@@ -1,3 +1,20 @@
 <!-- start custom footer snippets -->
 
+<!-- GUI-Agent Configuration -->
+{% if site.gui_agent.enabled %}
+<script>
+  // 从 Jekyll 配置传递到 GUI-Agent
+  window.GUIAgentConfig = {
+    enabled: {{ site.gui_agent.enabled }},
+    autoStart: {{ site.gui_agent.auto_start | default: false }},
+    theme: '{{ site.gui_agent.theme | default: "auto" }}',
+    position: '{{ site.gui_agent.position | default: "bottom-right" }}',
+    shortcuts: {
+      toggle: '{{ site.gui_agent.shortcuts.toggle | default: "Ctrl+Shift+A" }}',
+      cancel: '{{ site.gui_agent.shortcuts.cancel | default: "Escape" }}'
+    }
+  };
+</script>
+{% endif %}
+
 <!-- end custom footer snippets -->
