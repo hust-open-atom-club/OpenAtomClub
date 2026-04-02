@@ -28,8 +28,12 @@
   },
   "scripts": {
     "uglify": "uglifyjs assets/js/vendor/jquery/jquery-3.5.1.js assets/js/plugins/jquery.fitvids.js assets/js/plugins/jquery.greedy-navigation.js assets/js/plugins/jquery.magnific-popup.js assets/js/plugins/jquery.ba-throttle-debounce.js assets/js/plugins/smooth-scroll.js assets/js/plugins/gumshoe.js assets/js/_main.js -c -m -o assets/js/main.min.js",
+    "uglify:gui-agent": "uglifyjs assets/js/gui-agent/config.js assets/js/gui-agent/utils/logger.js assets/js/gui-agent/utils/storage.js assets/js/gui-agent/core/EventEmitter.js assets/js/gui-agent/core/ElementMapper.js assets/js/gui-agent/core/DOMParser.js assets/js/gui-agent/cursor/CursorAnimator.js assets/js/gui-agent/cursor/BigCursor.js assets/js/gui-agent/ai/CommandParser.js assets/js/gui-agent/ai/ActionExecutor.js assets/js/gui-agent/ui/ControlPanel.js assets/js/gui-agent/main.js -c -m -o assets/js/gui-agent.min.js",
     "add-banner": "node banner.js",
-    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
-    "build:js": "npm run uglify && npm run add-banner"
+    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -e \"assets/js/gui-agent.min.js\" -- npm run build:js",
+    "watch:gui-agent": "onchange \"assets/js/gui-agent/**/*.js\" -e \"assets/js/gui-agent.min.js\" -- npm run build:gui-agent",
+    "build:js": "npm run uglify && npm run add-banner",
+    "build:gui-agent": "npm run uglify:gui-agent",
+    "build:all": "npm run build:js && npm run build:gui-agent"
   }
 }

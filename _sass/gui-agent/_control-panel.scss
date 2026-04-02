@@ -1,0 +1,656 @@
+// 控制面板样式
+.ga-toggle-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, $ga-primary 0%, $ga-primary-light 100%);
+  border: none;
+  color: white;
+  cursor: pointer;
+  box-shadow: $ga-shadow-lg;
+  z-index: $ga-z-toggle;
+  transition: all $ga-transition-normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 32px rgba($ga-primary, 0.4);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.ga-panel {
+  position: fixed;
+  width: $ga-panel-width;
+  min-width: $ga-panel-min-width;
+  max-width: $ga-panel-max-width;
+  background: $ga-bg;
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  box-shadow: $ga-shadow-lg;
+  z-index: $ga-z-panel;
+  transition: all $ga-transition-normal;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  &.ga-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.9);
+  }
+
+  &--dragging {
+    cursor: move;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.25);
+  }
+
+  &--minimized {
+    .ga-panel-body {
+      display: none;
+    }
+  }
+
+  // 面板头部
+  &-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: linear-gradient(135deg, $ga-primary 0%, $ga-primary-light 100%);
+    color: white;
+    cursor: move;
+    user-select: none;
+  }
+
+  &-drag-handle {
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &-title {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+
+  &-controls {
+    display: flex;
+    gap: 4px;
+  }
+
+  // 面板主体
+  &-body {
+    padding: 20px;
+    color: $ga-text;
+    max-height: 600px;
+    overflow-y: auto;
+
+    // 滚动条样式
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba($ga-primary, 0.3);
+      border-radius: 3px;
+
+      &:hover {
+        background: rgba($ga-primary, 0.5);
+      }
+    }
+  }
+
+  // 配置区域
+  .ga-config-section {
+    margin-bottom: 20px;
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 8px;
+      color: $ga-text;
+    }
+
+    .ga-help-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: rgba($ga-primary, 0.1);
+      color: $ga-primary;
+      text-decoration: none;
+      font-size: 11px;
+      margin-left: 4px;
+      transition: all $ga-transition-fast;
+
+      &:hover {
+        background: $ga-primary;
+        color: white;
+      }
+    }
+  }
+
+  .ga-api-status {
+    margin-top: 8px;
+    font-size: 12px;
+
+    .ga-status-loading {
+      color: $ga-info;
+    }
+
+    .ga-status-success {
+      color: $ga-success;
+    }
+
+    .ga-status-error {
+      color: $ga-error;
+    }
+  }
+
+  // 输入区域
+  .ga-input-section {
+    margin-bottom: 20px;
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 8px;
+      color: $ga-text;
+    }
+  }
+
+  .ga-input-group {
+    display: flex;
+    gap: 8px;
+  }
+
+  .ga-input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid $ga-border;
+    border-radius: 8px;
+    font-size: 14px;
+    color: $ga-text;
+    background: white;
+    transition: all $ga-transition-fast;
+
+    &:focus {
+      outline: none;
+      border-color: $ga-primary;
+      box-shadow: 0 0 0 3px rgba($ga-primary, 0.1);
+    }
+
+    &::placeholder {
+      color: #9ca3af;
+    }
+  }
+
+  .ga-command-input {
+    font-family: inherit;
+  }
+
+  // 按钮样式
+  .ga-btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all $ga-transition-fast;
+    white-space: nowrap;
+
+    &-send {
+      background: $ga-primary;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 12px;
+
+      &:hover {
+        background: $ga-primary-dark;
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    &-test {
+      background: $ga-info;
+      color: white;
+
+      &:hover {
+        background: darken($ga-info, 10%);
+      }
+    }
+
+    &-icon {
+      padding: 4px;
+      background: transparent;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background $ga-transition-fast;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    &-text {
+      background: transparent;
+      border: none;
+      padding: 4px 8px;
+      font-size: 12px;
+      color: $ga-primary;
+      cursor: pointer;
+      transition: all $ga-transition-fast;
+
+      &:hover {
+        color: $ga-primary-dark;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // 历史记录区域
+  .ga-history-section {
+    margin-bottom: 20px;
+  }
+
+  .ga-history-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 13px;
+    font-weight: 500;
+    color: $ga-text;
+  }
+
+  .ga-history-list {
+    max-height: 180px;
+    overflow-y: auto;
+    border-radius: 8px;
+    background: rgba($ga-primary, 0.02);
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba($ga-primary, 0.2);
+      border-radius: 2px;
+    }
+  }
+
+  .ga-history-empty {
+    padding: 16px;
+    text-align: center;
+    color: #9ca3af;
+    font-size: 13px;
+  }
+
+  .ga-history-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: background $ga-transition-fast;
+    gap: 8px;
+
+    &:hover {
+      background: rgba($ga-primary, 0.08);
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba($ga-border, 0.5);
+    }
+  }
+
+  .ga-history-text {
+    flex: 1;
+    font-size: 13px;
+    color: $ga-text;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  // 状态区域
+  .ga-status-section {
+    border-top: 1px solid $ga-border;
+    padding-top: 16px;
+  }
+
+  .ga-status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .ga-status-dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: $ga-success;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+    flex: none;
+
+    &--info {
+      background: $ga-info;
+      animation: ga-dot-pulse 1.5s infinite;
+    }
+
+    &--success {
+      background: $ga-success;
+      box-shadow: 0 0 0 4px rgba($ga-success, 0.16);
+    }
+
+    &--warning {
+      background: $ga-warning;
+    }
+
+    &--error {
+      background: $ga-error;
+      animation: ga-dot-blink 0.8s infinite;
+    }
+  }
+
+  .ga-status-text {
+    color: $ga-text;
+  }
+
+  // 进度条
+  .ga-progress-bar {
+    margin-top: 12px;
+    height: 3px;
+    background: rgba($ga-primary, 0.1);
+    border-radius: 2px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity $ga-transition-normal;
+
+    &--visible {
+      opacity: 1;
+    }
+  }
+
+  .ga-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, $ga-primary 0%, $ga-primary-light 100%);
+    transition: width $ga-transition-normal;
+    width: 0%;
+  }
+
+  .ga-screen-effect {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity $ga-transition-normal;
+    z-index: $ga-z-panel - 1;
+    box-shadow:
+      inset 0 0 0 0 rgba($ga-primary-light, 0),
+      inset 0 0 0 0 rgba($ga-primary, 0);
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+    }
+
+    &::before {
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba($ga-primary-light, 0.95), rgba($ga-primary, 0.35) 65%, transparent) top / 100% 6px no-repeat,
+        linear-gradient(180deg, rgba($ga-primary-light, 0.95), rgba($ga-primary, 0.35) 65%, transparent) right / 6px 100% no-repeat,
+        linear-gradient(270deg, rgba($ga-primary-light, 0.95), rgba($ga-primary, 0.35) 65%, transparent) bottom / 100% 6px no-repeat,
+        linear-gradient(0deg, rgba($ga-primary-light, 0.95), rgba($ga-primary, 0.35) 65%, transparent) left / 6px 100% no-repeat;
+      box-shadow:
+        inset 0 0 0 2px rgba($ga-primary-light, 0.65),
+        inset 0 0 36px rgba($ga-primary, 0.18),
+        0 0 42px rgba($ga-primary-light, 0.22);
+      animation: ga-screen-pulse 1.2s ease-in-out infinite;
+    }
+
+    &::after {
+      inset: 0;
+      background:
+        radial-gradient(circle at top left, rgba($ga-primary-light, 0.35), transparent 22%),
+        radial-gradient(circle at top right, rgba($ga-primary-light, 0.35), transparent 22%),
+        radial-gradient(circle at bottom left, rgba($ga-primary-light, 0.35), transparent 22%),
+        radial-gradient(circle at bottom right, rgba($ga-primary-light, 0.35), transparent 22%);
+      animation: ga-screen-pulse 1.8s ease-in-out infinite;
+    }
+
+    &--active {
+      opacity: 1;
+      box-shadow:
+        inset 0 0 0 3px rgba($ga-primary-light, 0.6),
+        inset 0 0 120px rgba($ga-primary, 0.08);
+    }
+  }
+}
+
+// 动画
+@keyframes ga-dot-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+}
+
+@keyframes ga-dot-blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes ga-screen-pulse {
+  0%, 100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.003);
+  }
+}
+
+@keyframes ga-screen-scan {
+  0% {
+    transform: translate3d(-8%, -8%, 0);
+  }
+  50% {
+    transform: translate3d(8%, 8%, 0);
+  }
+  100% {
+    transform: translate3d(-8%, -8%, 0);
+  }
+}
+
+// 屏幕边缘执行特效需要挂在 body 下，不能依赖 .ga-panel 作用域
+.ga-screen-effect {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity $ga-transition-normal;
+  z-index: $ga-z-panel - 1;
+  box-shadow:
+    inset 0 0 0 0 rgba($ga-primary-light, 0),
+    inset 0 0 0 0 rgba($ga-primary, 0);
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+
+  &::before {
+    inset: 0;
+    background:
+      linear-gradient(90deg, rgba($ga-primary-light, 0.95), rgba($ga-primary, 0.35) 65%, transparent) top / 100% 6px no-repeat,
+      linear-gradient(180deg, rgba($ga-primary-light, 0.95), rgba($ga-primary, 0.35) 65%, transparent) right / 6px 100% no-repeat,
+      linear-gradient(270deg, rgba($ga-primary-light, 0.95), rgba($ga-primary, 0.35) 65%, transparent) bottom / 100% 6px no-repeat,
+      linear-gradient(0deg, rgba($ga-primary-light, 0.95), rgba($ga-primary, 0.35) 65%, transparent) left / 6px 100% no-repeat;
+    box-shadow:
+      inset 0 0 0 2px rgba($ga-primary-light, 0.65),
+      inset 0 0 36px rgba($ga-primary, 0.18),
+      0 0 42px rgba($ga-primary-light, 0.22);
+    animation: ga-screen-pulse 1.2s ease-in-out infinite;
+  }
+
+  &::after {
+    inset: 0;
+    background:
+      radial-gradient(circle at top left, rgba($ga-primary-light, 0.35), transparent 22%),
+      radial-gradient(circle at top right, rgba($ga-primary-light, 0.35), transparent 22%),
+      radial-gradient(circle at bottom left, rgba($ga-primary-light, 0.35), transparent 22%),
+      radial-gradient(circle at bottom right, rgba($ga-primary-light, 0.35), transparent 22%);
+    animation: ga-screen-pulse 1.8s ease-in-out infinite;
+  }
+
+  &--active {
+    opacity: 1;
+    box-shadow:
+      inset 0 0 0 3px rgba($ga-primary-light, 0.6),
+      inset 0 0 120px rgba($ga-primary, 0.08);
+  }
+}
+
+// 暗色主题
+@media (prefers-color-scheme: dark) {
+  .ga-panel {
+    background: $ga-bg-dark;
+    color: $ga-text-dark;
+
+    &-body {
+      color: $ga-text-dark;
+    }
+
+    .ga-input {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: $ga-border-dark;
+      color: $ga-text-dark;
+
+      &:focus {
+        border-color: $ga-primary-light;
+        box-shadow: 0 0 0 3px rgba($ga-primary-light, 0.1);
+      }
+
+      &::placeholder {
+        color: #6b7280;
+      }
+    }
+
+    .ga-history-list {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .ga-history-item {
+      &:hover {
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      &:not(:last-child) {
+        border-bottom-color: $ga-border-dark;
+      }
+    }
+
+    .ga-history-text,
+    .ga-status-text,
+    .ga-config-section label,
+    .ga-input-section label,
+    .ga-history-header {
+      color: $ga-text-dark;
+    }
+
+    .ga-status-section {
+      border-top-color: $ga-border-dark;
+    }
+  }
+}
+
+// 响应式
+@media (max-width: 480px) {
+  .ga-panel {
+    width: calc(100vw - 40px);
+    max-width: none;
+    left: 20px !important;
+    right: 20px !important;
+  }
+
+  .ga-toggle-btn {
+    width: 48px;
+    height: 48px;
+    bottom: 16px;
+    right: 16px;
+  }
+}

@@ -1,0 +1,40 @@
+// GUI-Agent 主样式文件
+// 导入所有子模块
+
+@import "variables";
+@import "animations";
+@import "cursor";
+@import "control-panel";
+
+// 全局样式重置（仅影响 gui-agent 相关元素）
+[class^="ga-"],
+[class*=" ga-"] {
+  box-sizing: border-box;
+}
+
+// 隐藏类
+.ga-hidden {
+  display: none !important;
+}
+
+// 调试模式（显示元素边界）
+.gui-agent-debug {
+  [class^="ga-cursor"],
+  [class^="ga-panel"] {
+    outline: 2px dashed red;
+  }
+
+  .ga-cursor-ring,
+  .ga-cursor-dot {
+    outline: 1px solid blue;
+  }
+}
+
+// 打印时隐藏
+@media print {
+  .ga-cursor,
+  .ga-panel,
+  .ga-toggle-btn {
+    display: none !important;
+  }
+}

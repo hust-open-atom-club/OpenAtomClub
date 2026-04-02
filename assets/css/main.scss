@@ -7,6 +7,9 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+// GUI-Agent Styles
+@import "gui-agent/gui-agent";
+
 $red: #e55643;
 $green: #2b9f5e;
 $yellow: #f1c83c;
