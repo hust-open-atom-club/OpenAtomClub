@@ -9,20 +9,25 @@
   margin-right: 0;
   width: 100%;
   margin-top: 3em;
-  color: $muted-text-color;
+  color: mix(#fff, $dark-gray, 30%);
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.45s;
   animation-delay: 0.45s;
-  background-color: $footer-background-color;
+  background: linear-gradient(
+    180deg,
+    mix(#fff, $dark-gray, 88%) 0%,
+    mix(#fff, $dark-gray, 82%) 100%
+  );
+  border-top: 3px solid $info-color;
 
   footer {
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2em;
+    margin-top: 1em;
     max-width: 100%;
-    padding: 0 1em 2em;
+    padding: 0 1.5em 1em;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -30,11 +35,13 @@
   }
 
   a {
-    color: inherit;
+    color: mix(#fff, $dark-gray, 15%);
     text-decoration: none;
+    transition: color 0.2s ease;
 
     &:hover {
-      text-decoration: underline;
+      color: $info-color;
+      text-decoration: none;
     }
   }
 
@@ -42,7 +49,15 @@
   .fab,
   .far,
   .fal {
-    color: $muted-text-color;
+    color: mix(#fff, $dark-gray, 35%);
+    transition: color 0.2s ease;
+  }
+
+  a:hover .fas,
+  a:hover .fab,
+  a:hover .far,
+  a:hover .fal {
+    color: $info-color;
   }
 }
 

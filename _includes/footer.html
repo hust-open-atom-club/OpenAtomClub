@@ -1,51 +1,99 @@
 <div class="footer-row">
   <div class="footer-block footer__about">
-    <p>华科开放原子开源俱乐部是一个致力于促进开源文化发展、贡献优秀开源软件的活跃开源社区，
+    <h4 class="footer__heading">华科开放原子开源俱乐部</h4>
+    <p>致力于促进开源文化发展、贡献优秀开源软件的活跃开源社区，
       我们坚信开源文化的重要性，相信共同的开源目标将会使我们变得更加强大和有影响力。</p>
-    <p></p>
   </div>
-  <!-- set right -->
-  <div class="footer__contact" style="text-align: right;">
-    <!-- set left -->
-    <div class="footer-block footer__extras" style="text-align: left;">
-      <ul>
-        <li>
-          <a href="/wiki/intro/"><i class="fas fa-info-circle"></i> 关于我们</a>
-        </li>
-        <li>
-          <a href="https://github.com/{{ site.repository }}"><i class="fab fa-github"></i> 本站仓库</a>
-        </li>
-      </ul>
-    </div>
+  <div class="footer-block footer__links">
+    <h4 class="footer__heading">链接</h4>
+    <ul>
+      <li>
+        <a href="/wiki/intro/"><i class="fas fa-info-circle"></i> 关于我们</a>
+      </li>
+      <li>
+        <a href="https://github.com/{{ site.repository }}"><i class="fab fa-github"></i> 本站仓库</a>
+      </li>
+    </ul>
   </div>
-  </div>
-  <div class="small-text"><a href="https://beian.miit.gov.cn/" target="_blank">鄂ICP备2024050034号</a></div>
+</div>
+<div class="footer__bottom">
+  <span class="footer__copyright">&copy; {{ site.time | date: '%Y' }} {{ site.title }}</span>
+  <span class="footer__separator">|</span>
+  <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">鄂ICP备2024050034号</a>
+</div>
 <style>
   .footer-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 0;
-    /* Add this line to reduce the vertical size of the footer */
-  }
-ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 20px;
-    list-style-type: none;
-  }
-  p {
-    margin: 0;
-    font-size: 0.8em;
-    /* Add this line to reduce the font size of the paragraph text */
-  }
-  .small-text {
-    margin-top: 0%;
-    font-size: 0.6em;
-    text-align: center;
+    gap: 2em;
+    padding: 0;
   }
 
-  .footer-block {
+  @media (max-width: 600px) {
+    .footer-row {
+      flex-direction: column;
+      gap: 1.5em;
+    }
+  }
+
+  .footer__heading {
+    margin: 0 0 0.6em 0;
+    font-size: 0.95em;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #3d4144;
+  }
+
+  .footer__about {
+    flex: 2;
+  }
+
+  .footer__links {
     flex: 1;
+  }
+
+  .footer__links ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .footer__links ul li {
+    margin-bottom: 0.35em;
+  }
+
+  .footer__links ul li a {
+    font-size: 0.85em;
+  }
+
+  .footer__links ul li a i {
+    width: 1.2em;
+    text-align: center;
+    margin-right: 0.25em;
+  }
+
+  .footer-block p {
+    margin: 0;
+    font-size: 0.8em;
+    line-height: 1.7;
+  }
+
+  .footer__bottom {
+    margin-top: 0.8em;
+    padding-top: 0.6em;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    font-size: 0.7em;
+    text-align: center;
+    color: #888;
+  }
+
+  .footer__separator {
+    margin: 0 0.5em;
+    opacity: 0.4;
+  }
+
+  .footer__copyright {
+    font-weight: 500;
   }
 </style>
