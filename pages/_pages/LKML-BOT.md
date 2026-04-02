@@ -53,7 +53,7 @@ LKML-BOT 是一款基于 NoneBot 2 框架构建的智能邮件列表监控机器
 
 ### Discord 平台 - PATCH 卡片通知
 
-![Discord PATCH Card](patch_card.png)
+*Discord PATCH 卡片示意图待补充。*
 
 **PATCH 卡片**展示了补丁系列的完整信息：
 - **标题**：显示完整的 PATCH 主题，如 `[PATCH v3 0/7] docs/zh_CN: Add timers subsystem translation`
@@ -64,7 +64,7 @@ LKML-BOT 是一款基于 NoneBot 2 框架构建的智能邮件列表监控机器
 
 ### Discord 平台 - Thread 追踪
 
-![Discord Thread](thread.png)
+*Discord Thread 示意图待补充。*
 
 **Thread 追踪**功能让您不错过任何讨论动态：
 - 为重要的 PATCH 系列创建专属讨论串
@@ -74,7 +74,7 @@ LKML-BOT 是一款基于 NoneBot 2 框架构建的智能邮件列表监控机器
 
 ### 飞书平台 - 交互式卡片
 
-![Feishu Card](feishu.png)
+![Feishu Card]({{ '/pages/_pages/image/LKML-BOT/feishu.png' | relative_url }})
 
 **飞书卡片**：
 - **新提交**标签高亮显示新补丁
@@ -90,7 +90,7 @@ LKML-BOT 是一款基于 NoneBot 2 框架构建的智能邮件列表监控机器
 
 LKML-BOT 采用清晰的分层架构，实现业务逻辑与框架解耦：
 
-![分层架构](arch.png)
+*分层架构图待补充。*
 
 ### 核心模块简介
 

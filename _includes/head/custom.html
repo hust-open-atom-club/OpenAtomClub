@@ -2,4 +2,195 @@
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 <link rel="shortcut icon" sizes="" href="/assets/images/penguin-logo.png">
+{% if site.gui_agent.enabled and site.gui_agent.auto_start != true %}
+<style>
+  #ga-toggle-btn[data-ga-bootstrap="true"] {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+    color: #fff;
+    box-shadow: 0 8px 32px rgba(59, 130, 246, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999998;
+  }
+
+  #ga-control-panel[data-ga-bootstrap="true"] {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: min(380px, calc(100vw - 32px));
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 16px;
+    box-shadow: 0 16px 48px rgba(15, 23, 42, 0.18);
+    overflow: hidden;
+    z-index: 999999;
+    color: #1f2937;
+    backdrop-filter: blur(12px);
+  }
+
+  #ga-control-panel[data-ga-bootstrap="true"] .ga-bootstrap-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: linear-gradient(135deg, #5b86e5 0%, #7aa2ff 100%);
+    color: #fff;
+    font: 600 14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  #ga-control-panel[data-ga-bootstrap="true"] .ga-bootstrap-title {
+    flex: 1;
+  }
+
+  #ga-control-panel[data-ga-bootstrap="true"] .ga-bootstrap-close {
+    border: none;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  #ga-control-panel[data-ga-bootstrap="true"] .ga-bootstrap-body {
+    padding: 18px 20px;
+    font: 500 14px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  #ga-control-panel[data-ga-bootstrap="true"] .ga-bootstrap-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #4b5563;
+  }
+
+  #ga-control-panel[data-ga-bootstrap="true"] .ga-bootstrap-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #10b981;
+    flex: none;
+  }
+</style>
+<script>
+  (function() {
+    if (window.__gaBootstrapSetup) return;
+    window.__gaBootstrapSetup = true;
+    var PANEL_VISIBLE_KEY = 'ga_panel_visible';
+    var PANEL_STATUS_KEY = 'ga_panel_status';
+    var PANEL_KEEP_ALIVE_KEY = 'ga_panel_keep_alive';
+
+    function setPanelVisible(visible) {
+      try {
+        sessionStorage.setItem(PANEL_VISIBLE_KEY, visible ? 'true' : 'false');
+      } catch (error) {}
+    }
+
+    function getPanelVisible() {
+      try {
+        return sessionStorage.getItem(PANEL_VISIBLE_KEY) === 'true' &&
+          sessionStorage.getItem(PANEL_KEEP_ALIVE_KEY) === 'true';
+      } catch (error) {
+        return false;
+      }
+    }
+
+    function getPanelStatus() {
+      try {
+        return sessionStorage.getItem(PANEL_STATUS_KEY) || '正在恢复 GUI 助手...';
+      } catch (error) {
+        return '正在恢复 GUI 助手...';
+      }
+    }
+
+    function handleBootstrapClick() {
+      if (window.GUIAgent && typeof window.GUIAgent.show === 'function') {
+        window.GUIAgent.show().catch(function(error) {
+          console.error('[GUIAgent] Failed to show:', error);
+        });
+        return;
+      }
+
+      setPanelVisible(true);
+      window.__gaBootstrapAction = 'show';
+      ensureBootstrapPanel();
+    }
+
+    function ensureBootstrapButton() {
+      if (document.getElementById('ga-toggle-btn')) return;
+
+      var button = document.createElement('button');
+      button.id = 'ga-toggle-btn';
+      button.className = 'ga-toggle-btn';
+      button.setAttribute('data-ga-bootstrap', 'true');
+      button.title = '启动 GUI 助手 (Ctrl+Shift+A)';
+      button.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4M12 8h.01"></path></svg>';
+      button.addEventListener('click', handleBootstrapClick);
+
+      (document.body || document.documentElement).appendChild(button);
+    }
+
+    function closeBootstrapPanel() {
+      try {
+        sessionStorage.setItem(PANEL_KEEP_ALIVE_KEY, 'false');
+      } catch (error) {}
+      setPanelVisible(false);
+      var panel = document.getElementById('ga-control-panel');
+      if (panel && panel.getAttribute('data-ga-bootstrap') === 'true') {
+        panel.parentNode.removeChild(panel);
+      }
+    }
+
+    function ensureBootstrapPanel() {
+      if (!getPanelVisible()) return;
+
+      var panel = document.getElementById('ga-control-panel');
+      if (!panel) {
+        panel = document.createElement('div');
+        panel.id = 'ga-control-panel';
+        panel.className = 'ga-panel';
+        panel.setAttribute('data-ga-bootstrap', 'true');
+        panel.innerHTML = [
+          '<div class="ga-bootstrap-header">',
+          '  <span class="ga-bootstrap-title">GUI Agent - 网页助手</span>',
+          '  <button type="button" class="ga-bootstrap-close" aria-label="关闭">×</button>',
+          '</div>',
+          '<div class="ga-bootstrap-body">',
+          '  <div class="ga-bootstrap-status">',
+          '    <span class="ga-bootstrap-dot"></span>',
+          '    <span class="ga-bootstrap-status-text"></span>',
+          '  </div>',
+          '</div>'
+        ].join('');
+        panel.querySelector('.ga-bootstrap-close').addEventListener('click', closeBootstrapPanel);
+        (document.body || document.documentElement).appendChild(panel);
+      }
+
+      var statusEl = panel.querySelector('.ga-bootstrap-status-text');
+      if (statusEl) {
+        statusEl.textContent = getPanelStatus();
+      }
+    }
+
+    function mountBootstrapButton() {
+      if (document.body) {
+        ensureBootstrapButton();
+        ensureBootstrapPanel();
+        return;
+      }
+
+      window.requestAnimationFrame(mountBootstrapButton);
+    }
+
+    mountBootstrapButton();
+  })();
+</script>
+{% endif %}
 <!-- end custom head snippets -->
