@@ -1,22 +1,12 @@
 # main links
 main:
-  - title: '<i class="far fa-newspaper"></i> News'
+  - title: '<i class="far fa-newspaper"></i> 新闻动态'
     url: /news/
-  - title: '<i class="fas fa-book"></i> Wiki'
+  - title: '<i class="fas fa-book-open"></i> 俱乐部百科'
     url: /wiki/
-  - title: '<i class="fas fa-fw fa-link"></i> Join US'
-    url: /wiki/joinus/
-  - title: '<i class="fas fa-globe"></i> HCTT'
-    url: https://hctt.openatom.club/
-  - title: '<i class="fas fa-server"></i> Mirrors'
+  - title: '<i class="fas fa-server"></i> 镜像站'
     url: https://mirrors.hust.edu.cn
-  # - title: "Quick-Start Guide"
-  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: '<i class="fas fa-globe"></i> 翻译团队'
+    url: https://hctt.openatom.club/
+  - title: '<i class="fas fa-user-plus"></i> 加入我们'
+    url: /wiki/joinus/
