@@ -380,10 +380,18 @@
   }
 
   .ga-status-dot {
-    width: 8px;
-    height: 8px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     background: $ga-success;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+    flex: none;
 
     &--info {
       background: $ga-info;
@@ -392,6 +400,7 @@
 
     &--success {
       background: $ga-success;
+      box-shadow: 0 0 0 4px rgba($ga-success, 0.16);
     }
 
     &--warning {
@@ -429,6 +438,56 @@
     transition: width $ga-transition-normal;
     width: 0%;
   }
+
+  .ga-screen-effect {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity $ga-transition-normal;
+    z-index: $ga-z-panel - 1;
+    box-shadow:
+      inset 0 0 0 0 rgba($ga-primary-light, 0),
+      inset 0 0 0 0 rgba($ga-primary, 0);
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+    }
+
+    &::before {
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba($ga-primary-light, 0.95), rgba($ga-primary, 0.35) 65%, transparent) top / 100% 6px no-repeat,
+        linear-gradient(180deg, rgba($ga-primary-light, 0.95), rgba($ga-primary, 0.35) 65%, transparent) right / 6px 100% no-repeat,
+        linear-gradient(270deg, rgba($ga-primary-light, 0.95), rgba($ga-primary, 0.35) 65%, transparent) bottom / 100% 6px no-repeat,
+        linear-gradient(0deg, rgba($ga-primary-light, 0.95), rgba($ga-primary, 0.35) 65%, transparent) left / 6px 100% no-repeat;
+      box-shadow:
+        inset 0 0 0 2px rgba($ga-primary-light, 0.65),
+        inset 0 0 36px rgba($ga-primary, 0.18),
+        0 0 42px rgba($ga-primary-light, 0.22);
+      animation: ga-screen-pulse 1.2s ease-in-out infinite;
+    }
+
+    &::after {
+      inset: 0;
+      background:
+        radial-gradient(circle at top left, rgba($ga-primary-light, 0.35), transparent 22%),
+        radial-gradient(circle at top right, rgba($ga-primary-light, 0.35), transparent 22%),
+        radial-gradient(circle at bottom left, rgba($ga-primary-light, 0.35), transparent 22%),
+        radial-gradient(circle at bottom right, rgba($ga-primary-light, 0.35), transparent 22%);
+      animation: ga-screen-pulse 1.8s ease-in-out infinite;
+    }
+
+    &--active {
+      opacity: 1;
+      box-shadow:
+        inset 0 0 0 3px rgba($ga-primary-light, 0.6),
+        inset 0 0 120px rgba($ga-primary, 0.08);
+    }
+  }
 }
 
 // 动画
@@ -449,6 +508,80 @@
   }
   25%, 75% {
     opacity: 0.3;
+  }
+}
+
+@keyframes ga-screen-pulse {
+  0%, 100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.003);
+  }
+}
+
+@keyframes ga-screen-scan {
+  0% {
+    transform: translate3d(-8%, -8%, 0);
+  }
+  50% {
+    transform: translate3d(8%, 8%, 0);
+  }
+  100% {
+    transform: translate3d(-8%, -8%, 0);
+  }
+}
+
+// 屏幕边缘执行特效需要挂在 body 下，不能依赖 .ga-panel 作用域
+.ga-screen-effect {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity $ga-transition-normal;
+  z-index: $ga-z-panel - 1;
+  box-shadow:
+    inset 0 0 0 0 rgba($ga-primary-light, 0),
+    inset 0 0 0 0 rgba($ga-primary, 0);
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+
+  &::before {
+    inset: 0;
+    background:
+      linear-gradient(90deg, rgba($ga-primary-light, 0.95), rgba($ga-primary, 0.35) 65%, transparent) top / 100% 6px no-repeat,
+      linear-gradient(180deg, rgba($ga-primary-light, 0.95), rgba($ga-primary, 0.35) 65%, transparent) right / 6px 100% no-repeat,
+      linear-gradient(270deg, rgba($ga-primary-light, 0.95), rgba($ga-primary, 0.35) 65%, transparent) bottom / 100% 6px no-repeat,
+      linear-gradient(0deg, rgba($ga-primary-light, 0.95), rgba($ga-primary, 0.35) 65%, transparent) left / 6px 100% no-repeat;
+    box-shadow:
+      inset 0 0 0 2px rgba($ga-primary-light, 0.65),
+      inset 0 0 36px rgba($ga-primary, 0.18),
+      0 0 42px rgba($ga-primary-light, 0.22);
+    animation: ga-screen-pulse 1.2s ease-in-out infinite;
+  }
+
+  &::after {
+    inset: 0;
+    background:
+      radial-gradient(circle at top left, rgba($ga-primary-light, 0.35), transparent 22%),
+      radial-gradient(circle at top right, rgba($ga-primary-light, 0.35), transparent 22%),
+      radial-gradient(circle at bottom left, rgba($ga-primary-light, 0.35), transparent 22%),
+      radial-gradient(circle at bottom right, rgba($ga-primary-light, 0.35), transparent 22%);
+    animation: ga-screen-pulse 1.8s ease-in-out infinite;
+  }
+
+  &--active {
+    opacity: 1;
+    box-shadow:
+      inset 0 0 0 3px rgba($ga-primary-light, 0.6),
+      inset 0 0 120px rgba($ga-primary, 0.08);
   }
 }
 

@@ -4,16 +4,16 @@ permalink: /wiki/
 layout: splash
 ---
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-
 <div class="wiki-container" style="display: flex; gap: 30px; margin-top: 20px; align-items: flex-start;">
   <div class="wiki-sidebar" style="width: 260px; flex-shrink: 0; border-right: 1px solid #eaecef; padding-right: 15px;">
+    {% assign wiki_posts = site.wiki | sort: 'title' %}
     <ul style="list-style: none; padding: 0; margin: 0;">
-      {% for post in site.wiki %}
+      {% for post in wiki_posts %}
         <li style="margin-bottom: 20px;">
-          <a href="javascript:void(0);" 
-             onclick="loadPureContent('{{ post.url | relative_url }}', this)" 
+          <a href="{{ post.url | relative_url }}"
+             onclick="loadPureContent(event, '{{ post.url | relative_url }}', this)"
              class="wiki-link"
+             aria-controls="wiki-display-area"
              style="display: block; text-decoration: none; padding: 8px; border-radius: 4px; transition: 0.2s;">
             <div style="font-weight: bold; color: #3d85ad; font-size: 1.1em; line-height: 1.2;">
               {{ post.title }}
@@ -48,12 +48,18 @@ layout: splash
 </style>
 
 <script>
-function loadPureContent(url, element) {
+function loadPureContent(event, url, element) {
+    if (event) {
+        event.preventDefault();
+    }
+
     const links = document.querySelectorAll('.wiki-link');
     for (let i = 0; i < links.length; i++) {
         links[i].classList.remove('active');
+        links[i].removeAttribute('aria-current');
     }
     element.classList.add('active');
+    element.setAttribute('aria-current', 'page');
 
     const innerContainer = document.getElementById('inner-content');
     const loader = document.getElementById('loader');

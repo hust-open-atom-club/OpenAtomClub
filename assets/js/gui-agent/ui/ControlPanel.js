@@ -42,6 +42,9 @@
       // 加载历史记录
       this._loadHistory();
 
+      // 恢复跨页暂存的输入框内容和滚动位置
+      this._restoreTransientState();
+
       this.logger.info('[ControlPanel] Initialized');
     }
 
@@ -50,7 +53,11 @@
      * @private
      */
     _createElements() {
-      // 创建触发按钮
+      const isCrossPageRestore = this._getPersistedPanelVisible();
+      const persistedStatus = this._getPersistedPanelStatus();
+
+      // 创建或接管触发按钮
+      const existingToggleButton = document.getElementById('ga-toggle-btn');
       this.toggleButton = document.createElement('button');
       this.toggleButton.id = 'ga-toggle-btn';
       this.toggleButton.className = 'ga-toggle-btn';
@@ -61,12 +68,18 @@
           <path d="M12 16v-4M12 8h.01"/>
         </svg>
       `;
-      document.body.appendChild(this.toggleButton);
+      if (existingToggleButton && existingToggleButton.parentNode) {
+        existingToggleButton.parentNode.replaceChild(this.toggleButton, existingToggleButton);
+      } else {
+        document.body.appendChild(this.toggleButton);
+      }
 
-      // 创建控制面板
-      this.panel = document.createElement('div');
+      // 创建或接管控制面板
+      const existingPanel = document.getElementById('ga-control-panel');
+      this.panel = existingPanel || document.createElement('div');
       this.panel.id = 'ga-control-panel';
-      this.panel.className = 'ga-panel ga-hidden';
+      this.panel.className = isCrossPageRestore ? 'ga-panel' : 'ga-panel ga-hidden';
+      this.panel.removeAttribute('data-ga-bootstrap');
       this.panel.innerHTML = `
         <div class="ga-panel-header">
           <div class="ga-panel-drag-handle">
@@ -122,7 +135,7 @@
           <div class="ga-status-section">
             <div class="ga-status-indicator">
               <span class="ga-status-dot"></span>
-              <span class="ga-status-text">就绪</span>
+              <span class="ga-status-text">${this._escapeHtml(persistedStatus)}</span>
             </div>
             <div class="ga-progress-bar">
               <div class="ga-progress-fill"></div>
@@ -130,7 +143,12 @@
           </div>
         </div>
       `;
-      document.body.appendChild(this.panel);
+      this.isVisible = isCrossPageRestore;
+      if (!this.panel.parentNode) {
+        document.body.appendChild(this.panel);
+      }
+
+      this._ensureScreenEffect();
     }
 
     /**
@@ -190,6 +208,14 @@
         if (e.key === 'Enter') {
           this._handleCommand();
         }
+      });
+      commandInput.addEventListener('input', () => {
+        this._persistPanelState({ draft: commandInput.value });
+      });
+
+      const panelBody = this.panel.querySelector('.ga-panel-body');
+      panelBody.addEventListener('scroll', () => {
+        this._persistPanelState({ bodyScrollTop: panelBody.scrollTop });
       });
 
       // 清除历史记录
@@ -317,6 +343,7 @@
 
       // 清空输入
       input.value = '';
+      this._persistPanelState({ draft: '' });
     }
 
     /**
@@ -391,6 +418,7 @@
 
       statusText.textContent = message;
       statusDot.className = `ga-status-dot ga-status-dot--${type}`;
+      statusDot.textContent = type === 'success' ? '✓' : '';
 
       if (progress !== null) {
         progressBar.classList.add('ga-progress-bar--visible');
@@ -398,6 +426,10 @@
       } else {
         progressBar.classList.remove('ga-progress-bar--visible');
       }
+
+      this._toggleScreenEffect(progress !== null);
+
+      this._persistPanelState({ status: message });
     }
 
     /**
@@ -408,6 +440,7 @@
 
       this.panel.classList.remove('ga-hidden');
       this.isVisible = true;
+      this._persistPanelState({ visible: true });
 
       // 聚焦命令输入框
       setTimeout(() => {
@@ -427,6 +460,7 @@
 
       this.panel.classList.add('ga-hidden');
       this.isVisible = false;
+      this._persistPanelState({ visible: false });
 
       this.events.emit('panel:hidden');
       this.logger.debug('[ControlPanel] Panel hidden');
@@ -472,6 +506,10 @@
      * 销毁
      */
     destroy() {
+      const screenEffect = document.getElementById('ga-screen-effect');
+      if (screenEffect && screenEffect.parentNode) {
+        screenEffect.parentNode.removeChild(screenEffect);
+      }
       if (this.panel && this.panel.parentNode) {
         this.panel.parentNode.removeChild(this.panel);
       }
@@ -481,6 +519,99 @@
       this.panel = null;
       this.toggleButton = null;
       this.logger.info('[ControlPanel] Destroyed');
+    }
+
+    _persistPanelState(state = {}) {
+      try {
+        if (typeof state.visible === 'boolean') {
+          sessionStorage.setItem('ga_panel_visible', state.visible ? 'true' : 'false');
+        }
+
+        if (typeof state.status === 'string') {
+          sessionStorage.setItem('ga_panel_status', state.status);
+        }
+
+        if (typeof state.draft === 'string') {
+          sessionStorage.setItem('ga_panel_draft', state.draft);
+        }
+
+        if (typeof state.bodyScrollTop === 'number' && Number.isFinite(state.bodyScrollTop)) {
+          sessionStorage.setItem('ga_panel_scroll_top', String(state.bodyScrollTop));
+        }
+      } catch (error) {
+        this.logger?.debug('[ControlPanel] Failed to persist panel state:', error);
+      }
+    }
+
+    _getPersistedPanelVisible() {
+      try {
+        return sessionStorage.getItem('ga_panel_visible') === 'true' &&
+          sessionStorage.getItem('ga_panel_keep_alive') === 'true';
+      } catch (error) {
+        return false;
+      }
+    }
+
+    _getPersistedPanelStatus() {
+      try {
+        return sessionStorage.getItem('ga_panel_status') || '就绪';
+      } catch (error) {
+        return '就绪';
+      }
+    }
+
+    _restoreTransientState() {
+      const input = this.panel.querySelector('#ga-command-input');
+      const panelBody = this.panel.querySelector('.ga-panel-body');
+      const draft = this._getPersistedPanelDraft();
+      const scrollTop = this._getPersistedPanelScrollTop();
+
+      if (input && draft) {
+        input.value = draft;
+      }
+
+      if (panelBody && Number.isFinite(scrollTop) && scrollTop > 0) {
+        requestAnimationFrame(() => {
+          panelBody.scrollTop = scrollTop;
+        });
+      }
+    }
+
+    _getPersistedPanelDraft() {
+      try {
+        return sessionStorage.getItem('ga_panel_draft') || '';
+      } catch (error) {
+        return '';
+      }
+    }
+
+    _getPersistedPanelScrollTop() {
+      try {
+        const value = Number(sessionStorage.getItem('ga_panel_scroll_top'));
+        return Number.isFinite(value) ? value : 0;
+      } catch (error) {
+        return 0;
+      }
+    }
+
+    _ensureScreenEffect() {
+      if (document.getElementById('ga-screen-effect')) {
+        return;
+      }
+
+      const screenEffect = document.createElement('div');
+      screenEffect.id = 'ga-screen-effect';
+      screenEffect.className = 'ga-screen-effect';
+      document.body.appendChild(screenEffect);
+    }
+
+    _toggleScreenEffect(isActive) {
+      const screenEffect = document.getElementById('ga-screen-effect');
+      if (!screenEffect) {
+        return;
+      }
+
+      screenEffect.classList.toggle('ga-screen-effect--active', isActive);
     }
   }
 
