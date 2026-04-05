@@ -3,29 +3,27 @@
    ========================================================================== */
 
 .masthead {
-  position: relative;
+  position: sticky;
+  top: 0;
   border-bottom: none;
-  background: rgba($background-color, 0.95);
-  -webkit-backdrop-filter: saturate(180%) blur(12px);
-  backdrop-filter: saturate(180%) blur(12px);
-  box-shadow: 0 1px 6px rgba(#000, 0.06), 0 1px 2px rgba(#000, 0.04);
+  background: rgba($background-color, 0.92);
+  -webkit-backdrop-filter: saturate(180%) blur(16px);
+  backdrop-filter: saturate(180%) blur(16px);
+  box-shadow: 0 1px 8px rgba(#000, 0.04), 0 0 1px rgba(#000, 0.08);
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
+  transition: box-shadow 0.3s ease, background 0.3s ease;
 
   &__inner-wrap {
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    padding: 0.7em 1.25em;
+    padding: 0.65em 1.5em;
     max-width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     font-family: $sans-serif-narrow;
 
@@ -45,21 +43,20 @@
 
 .site-logo img {
   max-height: 2.25rem;
-  transition: transform 0.2s ease;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.08) rotate(-2deg);
   }
 }
 
 .site-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
   align-self: center;
-  font-weight: bold;
-  letter-spacing: 0.01em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  font-size: 1.05em;
+  color: mix(#000, $primary-color, 40%);
 }
 
 .site-subtitle {
