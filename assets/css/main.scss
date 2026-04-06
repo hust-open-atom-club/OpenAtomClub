@@ -15,11 +15,16 @@ $green: #2b9f5e;
 $yellow: #f1c83c;
 $shadow: #533d4a;
 
+// --- Global refinements ---
+
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
     .program-title {
         text-transform: uppercase;
         text-align: center;
-        // add more space between the characters
         letter-spacing: 0.2em;
     }
 }
@@ -33,9 +38,26 @@ h1 {
     font-weight: 300;
     color: $shadow;
     margin-bottom: 1em;
-    
 }
 
 .page__meta {
     margin-bottom: 0.5em;
+}
+
+// Smooth section transitions
+.initial-content {
+  > * {
+    animation: fadeSlideUp 0.5s ease both;
+  }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

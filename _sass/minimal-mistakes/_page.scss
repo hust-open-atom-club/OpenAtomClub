@@ -169,7 +169,7 @@ body {
   &--overlay {
     position: relative;
     margin-bottom: 2em;
-    padding: 2em 0;
+    padding: 2.5em 0;
     @include clearfix;
     background-size: cover;
     background-repeat: no-repeat;
@@ -197,18 +197,36 @@ body {
     .page__lead,
     .btn {
       color: #fff;
-      text-shadow: 1px 1px 4px rgba(#000, 0.5);
+      text-shadow: 0 2px 12px rgba(#000, 0.3), 0 1px 3px rgba(#000, 0.2);
     }
 
     .page__lead {
       max-width: $medium;
+      font-weight: 300;
+      line-height: 1.7;
+      letter-spacing: 0.01em;
     }
 
     .page__title {
       font-size: $type-size-2;
+      font-weight: 800;
+      letter-spacing: 0.02em;
 
       @include breakpoint($small) {
         font-size: $type-size-1;
+      }
+    }
+
+    .btn {
+      border-radius: 6px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      padding: 0.6em 1.4em;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+      &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 16px rgba(#000, 0.2);
       }
     }
   }

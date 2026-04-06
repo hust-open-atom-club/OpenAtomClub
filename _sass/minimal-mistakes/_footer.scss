@@ -9,25 +9,31 @@
   margin-right: 0;
   width: 100%;
   margin-top: 3em;
-  color: mix(#fff, $dark-gray, 30%);
+  color: #c8cdd3;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.45s;
   animation-delay: 0.45s;
-  background: linear-gradient(
-    180deg,
-    mix(#fff, $dark-gray, 88%) 0%,
-    mix(#fff, $dark-gray, 82%) 100%
-  );
-  border-top: 3px solid $info-color;
+  background: #1e293b;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #0d9488, #14b8a6, #0d9488);
+  }
 
   footer {
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1em;
+    margin-top: 1.2em;
     max-width: 100%;
-    padding: 0 1.5em 1em;
+    padding: 0 1.5em 1.2em;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -35,12 +41,12 @@
   }
 
   a {
-    color: mix(#fff, $dark-gray, 15%);
+    color: #94a3b8;
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: color 0.25s ease;
 
     &:hover {
-      color: $info-color;
+      color: #5eead4;
       text-decoration: none;
     }
   }
@@ -49,15 +55,15 @@
   .fab,
   .far,
   .fal {
-    color: mix(#fff, $dark-gray, 35%);
-    transition: color 0.2s ease;
+    color: #64748b;
+    transition: color 0.25s ease;
   }
 
   a:hover .fas,
   a:hover .fab,
   a:hover .far,
   a:hover .fal {
-    color: $info-color;
+    color: #5eead4;
   }
 }
 

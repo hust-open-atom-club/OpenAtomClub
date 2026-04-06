@@ -266,21 +266,120 @@ header:
 </div>
 
 <style scoped>
-  /* every item is in column, left introduction and right imgs */
+  /* ===== Section Titles ===== */
+  .program-title {
+    position: relative;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 800;
+    color: #1e293b;
+    letter-spacing: 0.15em;
+  }
+
+  .program-title::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(90deg, #0d9488, #14b8a6);
+    border-radius: 2px;
+    margin: 0.4em auto 0;
+  }
+
+  /* ===== Services Grid ===== */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+  }
+
+  .service-item {
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .service-link {
+    display: block;
+    color: #333;
+    text-decoration: none !important;
+  }
+
+  .service-icon {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    background: linear-gradient(145deg, #fafafa 0%, #f1f5f9 100%);
+    transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .service-icon::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 30%, rgba(13, 148, 136, 0.06) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .service-icon i {
+    color: #475569;
+    transition: color 0.3s ease, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .service-icon img {
+    max-height: 80%;
+    max-width: 55%;
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .service-item:hover .service-icon {
+    border-color: #99f6e4;
+    box-shadow: 0 8px 24px rgba(13, 148, 136, 0.12);
+    transform: translateY(-4px);
+  }
+
+  .service-item:hover .service-icon::before {
+    opacity: 1;
+  }
+
+  .service-item:hover .service-icon i {
+    color: #0d9488;
+    transform: scale(1.08);
+  }
+
+  .service-item:hover .service-icon img {
+    transform: scale(1.08);
+  }
+
+  .service-name {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #1e293b;
+  }
+
+  .service-desc {
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  /* ===== Star Projects ===== */
   .custom-carousel {
     display: flex;
     flex-wrap: nowrap;
     overflow: visible;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
     margin: 0 auto;
     padding: 0;
     width: 100%;
     max-width: 100%;
-    height: 100%;
-    max-height: 100%;
-    background-color: #ffffff;
+    background-color: transparent;
   }
 
   .item {
@@ -290,139 +389,101 @@ header:
     justify-content: start;
     align-items: center;
     margin: 10px;
-    border: 1px solid #e9ecef;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #fff;
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+                box-shadow 0.35s ease;
+    overflow: hidden;
   }
 
   .item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08),
+                0 4px 12px rgba(0, 0, 0, 0.04);
+  }
+
+  .item > a {
+    width: 100%;
+    text-align: center;
   }
 
   .item > a > img {
-    border-radius: 10px 10px 0 0;
+    border-radius: 0;
     width: 100%;
     height: 300px;
     object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .item:hover > a > img {
+    transform: scale(1.03);
+  }
+
+  .item > a > h3 {
+    margin: 0.6em 0.5em 0.2em;
+    font-size: 1em;
+    font-weight: 700;
+    color: #1e293b;
   }
 
   .item > h3,
-  .item > p{
+  .item > p {
     margin: .5em;
   }
 
   .item > p {
-    color: #666;
-    font-size: 0.9em;
+    color: #64748b;
+    font-size: 0.85em;
     text-align: center;
-    padding: 0 0.8em;
+    padding: 0 1em;
+    line-height: 1.6;
   }
 
-  .services-container {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
+  /* ===== GitHub Links ===== */
+  .github-link {
+    margin-top: auto;
+    padding: 10px 0 15px;
   }
-  .services-title {
-    text-align: center;
-    margin-bottom: 40px;
-    position: relative;
-  }
-  .services-title h2 {
-    display: inline-block;
-    font-size: 26px;
-    color: #1b68c8;
-    margin: 0 20px;
-  }
-  .services-title .line {
-    display: inline-block;
-    width: 80px;
-    height: 2px;
-    background: #EBEBEB;
-    vertical-align: middle;
-  }
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
-  }
-  .service-item {
-    text-align: center;
-    transition: all 0.3s ease;
-  }
-  .service-link {
-    display: block;
-    color: #333;
-    text-decoration: none !important;
-  }
-  .service-icon {
-    height: 140px;
-    display: flex;
+
+  .github-link a {
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    border: 1px solid #dbd9da;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-  .service-icon img {
-    max-height: 80%;
-    max-width: 55%;
-    transition: transform 0.3s ease;
-  }
-  .service-item:hover .service-icon {
-    border-color: lightblue;
-    box-shadow: 0 0 10px lightblue;
-    transform: scale(1.05);
-  }
-  .service-item:hover .service-icon img {
-    transform: scale(1.1);
-  }
-  .service-name {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-  .service-desc {
-    color: #666;
-    font-size: 14px;
+    gap: 6px;
+    color: #475569;
+    text-decoration: none;
+    padding: 5px 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    background: #f8fafc;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.25s ease;
   }
 
-  .service-icon i.material-icons {
-  color: #1b68c8; /* Match the title color */
-  transition: transform 0.3s ease;
-}
+  .github-link a:hover {
+    background: #0d9488;
+    border-color: #0d9488;
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(13, 148, 136, 0.25);
+  }
 
-.service-item:hover .service-icon i.material-icons {
-  transform: scale(1.1);
-}
+  .github-link a:hover i {
+    color: #fff;
+  }
 
-.github-link {
-  margin-top: 10px;
-  margin-bottom: 15px;
-}
-
-.github-link a {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: #333;
-  text-decoration: none;
-  padding: 6px 12px;
-  border: 1px solid #e1e4e8;
-  border-radius: 6px;
-  background: #f6f8fa;
-  font-size: 14px;
-  transition: all 0.3s ease;
-}
-
-.github-link a:hover {
-  background: #e1e4e8;
-  color: #000;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
+  /* ===== Responsive ===== */
+  @media (max-width: 600px) {
+    .custom-carousel {
+      flex-direction: column;
+    }
+    .item {
+      width: 100%;
+    }
+    .services-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+  }
 </style>
