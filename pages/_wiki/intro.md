@@ -1,28 +1,72 @@
 ---
-title: "Introduction"
+title: "俱乐部简介"
 layout: splash
-excerpt: "俱乐部介绍"
+excerpt: "华中科技大学开放原子开源俱乐部"
+header:
+  overlay_image: /assets/images/index.jpg
+  overlay_filter: 0.25
 ---
 
-## 俱乐部介绍
+## 一、俱乐部概况
 
-- 华科开放原子开源俱乐部是一个致力于促进开源文化发展、贡献优秀开源软件的活跃社区，我们坚信开源文化的重要性，相信共同的开源目标将会使我们变得更加强大和有影响力。因此，我们积极投入人力物力开展开源操作系统社区贡献，引导学校老师学生参与开源活动，向开源社区做出自己的贡献。
+华中科技大学开放原子开源俱乐部（HUST OpenAtom Open Source Club）成立于 2023 年 4 月，是一个由华中科技大学网络空间安全学院师生共同发起并运营的开源技术社区。俱乐部秉承"开放、协作、共享"的开源精神，致力于推广开源文化、培育开源人才、贡献开源项目，是国内高校中具有重要影响力的开源实践平台。
 
-- 我们俱乐部遵循开源精神：开放、共享、协同、贡献。我们秉承这一理念来推动学校内外的开源事业，通过不断提升成员技能和能力，进行代码开发、测试、修复、文档编写等工作，为社区贡献自己的力量。在开源社区中，我们以通用 Linux 内核及国产 Linux 发行版（如 OpenEuler，OpenAnolis，OpenKylin，Deepin 等），物联网操作系统（如 LiteOS，RT-Thread，AliOS Things，TencentOS Tiny 等）为目标，持续地拓展贡献范围，不断增加我们的影响力和贡献价值。
+俱乐部成员构成多元，涵盖本科生、研究生、博士生及指导教师，形成了良好的"传帮带"氛围。组织架构上，俱乐部设有技术部、运营部、活动部等多个职能部门，并围绕 Linux 内核、RISC-V 系统软件、物联网操作系统、安全测试等核心方向设立了多个 SIG（特别兴趣小组）。
 
-- 我们俱乐部由一群志同道合的老师和学生组成，他们来自各个专业领域，但都对开源文化有着浓厚的兴趣和热情。我们时刻保持着互相学习、协作的态度，并且鼓励所有成员分享知识和经验，以此推动俱乐部的可持续发展。在俱乐部中，成员们可以互相帮助、支持，不断提高自己的技能水平，同时也为社区做出更多的贡献。
+## 二、宗旨与使命
 
-- 我们定期组织讨论班和圆桌会议，分享研究成果、解决问题，增进互相之间的了解和信任。我们欢迎所有对开源文化感兴趣、愿意为开源事业做出贡献的同学加入我们的俱乐部。在这里，你将有机会接触到最新的开源技术、结交志同道合的朋友，打造属于自己的开源之路。
+- **推广开源文化**：在校园内营造浓厚的开源氛围，普及开源理念，引导学生理解并参与开源。
+- **培育实践人才**：通过项目实践、技术培训、竞赛指导等方式，系统化培养具备扎实工程能力和开源协作素养的创新型人才。
+- **贡献开源生态**：深度参与国内外重要开源项目，特别是聚焦国产基础软件（如 RISC-V 引导程序、操作系统）和安全技术（如内核安全、漏洞挖掘），推动技术进步与生态建设。
+- **促进产学融合**：搭建高校与产业界的桥梁，将产业需求引入教学科研，同时将学术成果反馈给社区，实现双向赋能。
 
-## 俱乐部项目
+## 三、核心成就与特色项目
 
-|项目名称|项目介绍|项目地址|
-|---|---|---|
-|hust-mirrors|华科大开源镜像站点前端|[hust-open-atom-club/hust-mirrors](https://github.com/hust-open-atom-club/hust-mirrors)|
-|OpenSourceDeadline|开源活动截止日期站点|[hust-open-atom-club/open-source-deadlines](https://github.com/hust-open-atom-club/open-source-deadlines)|
-|hustmirror-cli|华科大开源镜像站点 CLI 工具|[hust-open-atom-club/hustmirror-cli](https://github.com/hust-open-atom-club/hustmirror-cli)|
-|TranslateProject|HCTT 翻译项目|[hust-open-atom-club/TranslateProject](https://github.com/hust-open-atom-club/TranslateProject)|
-|linux-insides-zh|Linux 内核揭秘|[hust-open-atom-club/linux-insides-zh](https://github.com/hust-open-atom-club/linux-insides-zh)|
-|pwn.hust.college|网络空间安全教育实践平台|[hust-open-atom-club/dojo](https://github.com/hust-open-atom-club/dojo)|
-|linux-edu-rank|Linux 内核高校贡献榜|[hust-open-atom-club/linux-edu-rank](https://github.com/hust-open-atom-club/linux-edu-rank)|
-|RISC-V Online|在线 RISC-V 汇编反汇编工具|[hust-open-atom-club/riscv-online](https://github.com/hust-open-atom-club/riscv-online)|
+### 1. 学术科研
+
+俱乐部师生在顶级学术会议和期刊上发表了多篇高水平论文：
+
+- **NDSS 2026**：论文《SoK: Take a Deep Step into Linux Kernel Hardening Effectiveness from the Offensive-Defensive Perspective》被录用，从攻防视角系统化评估了 Linux 内核加固机制的有效性。
+- **IEEE S&P 2026**：论文《PortGPT: Towards Automated Backporting Using Large Language Models》被录用，提出了基于大语言模型的自动化补丁回移植框架 PORTGPT，已有 9 个回移植补丁被 Linux 内核社区采纳。
+- **IEEE TIFS**：论文提出基于 Arm CCA 架构的细粒度进程内隔离系统 CCAegis，为机密计算系统设计提供了新思路。
+
+### 2. 开源项目
+
+俱乐部发起和主导了多个具有影响力的开源项目：
+
+- **RustSBI 项目**：俱乐部骨干成员发起的 RISC-V 安全引导固件解决方案，完全使用 Rust 语言编写，为国产 RISC-V 架构处理器提供高性能、高安全性的引导支持。荣获 2025 年度 OSCAR"开源项目及社区"奖项。
+- **K230 QEMU 上游化项目**：与格维开源社区（GTOC）联合主导，成功将嘉楠 K230 虚拟主板代码贡献至 QEMU 上游，实现了 SDK 无缝兼容，为 RISC-V 生态注入活力。
+- **多个技术子项目**：包括 RustSBI 原型设计系统、RustSBI Agent 智能问答体、组件化系统驱动、零阶段引导程序（如 Bouffaloader）等，形成了丰富的技术矩阵。
+
+### 3. 竞赛与奖励
+
+俱乐部成员在国内外多项重要赛事中屡获佳绩：
+
+- **开源安全奖励计划**：2024 年计划中，俱乐部师生累计获奖 44 人次，多个团队和个人在不同赛道斩获一、二、三等奖。
+- **全国大学生操作系统设计赛**：俱乐部老师指导的学生团队获得一等奖 1 项、二等奖 3 项。
+- **BlackHat Europe 2025**：俱乐部成员丁鹏宇分享了大语言模型推理架构安全缺陷的研究成果。
+
+### 4. 社区运营与生态建设
+
+- **品牌活动**：定期举办"源来喻见你"系列技术分享会、月度工作例会、开源工坊（如 Linux Kernel、RustSBI、OpenHarmony 工坊）等。
+- **行业大会**：深度参与开放原子开发者大会、中国 Linux 内核开发者大会（CLK）、CCF 中国开源大会、OSCAR 开源产业大会等。
+- **数字基础设施**：搭建了俱乐部官网、Discord 国际社区、Overleaf 在线 LaTeX 协作平台、"开源活动截止日期"网站等，详见[基础设施](/wiki/services/)页面。
+- **规范体系**：发布了《骨干成员晋级指南》、《设备借用管理规范》、《投稿指南》、《Linux 内核中文文档翻译规范》等。
+
+## 四、人才培养模式
+
+- **开放准入**：通过为俱乐部开源仓库提交 PR 并被合并即可申请加入，鼓励动手实践。
+- **阶梯成长**：成员分为普通成员、SIG 成员、骨干成员三级，有清晰的晋级考核要求和激励机制。
+- **项目驱动**：以真实开源项目（如 RustSBI、内核漏洞复现、AI 插件安全检测等）作为实践载体，在导师和社区指导下完成开发、测试、文档、协作全流程。
+- **实习与助研**：与武汉开源创新中心等机构合作，提供开源实习机会；面向本科生设立科研助研岗位，参与智能漏洞挖掘等前沿课题。
+
+## 五、未来展望
+
+- 深耕 RISC-V 系统软件、操作系统安全、AI 与系统软件融合等前沿方向
+- 扩大社区影响力，吸引更多高校师生和业界开发者参与
+- 深化与开放原子开源基金会、各大开源社区及企业的合作
+- 持续输出高质量的开源项目、技术文章和核心人才，为中国的开源事业和基础软件生态发展贡献力量
+
+---
+
+**汇聚开源力量，共筑技术未来**——华中科技大学开放原子开源俱乐部诚邀所有对开源技术充满热情的师生和开发者[加入我们](/wiki/joinus/)，一起探索、创造、分享。
