@@ -265,6 +265,27 @@ header:
   </div>
 </div>
 
+<h1>
+  <div class="program-title">🧑‍💻开源实习🧑‍💻</div>
+</h1>
+
+<div align="center">
+  <div class="custom-carousel">
+    <div class="item">
+      <a href="{{ '/projects/hustsync-rs/' | relative_url }}">
+        <img src="{{ '/assets/images/index.jpg' | relative_url }}" alt="hustsync.rs">
+        <h3>⚙️ hustsync.rs 开源课题</h3>
+      </a>
+      <p>Rust 重写的镜像同步工具，面向容器化、监控与 cgroup 能力</p>
+      <div class="github-link">
+        <a href="https://github.com/hust-open-atom-club/hustsync.rs" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <style scoped>
   /* ===== Section Titles ===== */
   .program-title {
@@ -395,12 +416,6 @@ header:
     transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
                 box-shadow 0.35s ease;
     overflow: hidden;
-  }
-
-  .item:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08),
-                0 4px 12px rgba(0, 0, 0, 0.04);
   }
 
   .item > a {
