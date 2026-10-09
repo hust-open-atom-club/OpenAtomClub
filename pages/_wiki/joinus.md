@@ -29,7 +29,7 @@ header:
 
 在您的 PR 被合并后，请填写**俱乐部成员信息表**。
 
-表格位于我们的[文档仓库](https://github.com/hust-open-atom-club/docs)中，填写后请发送至邮箱：**xihu@hust.edu.cn**。
+表格位于我们的[文档仓库](https://github.com/hust-open-atom-club/docs)中，填写后请发送至邮箱：**opensource@openatom.club**。
 
 请在表中准确填写您的 GitHub ID，以便我们发出组织邀请。
 
