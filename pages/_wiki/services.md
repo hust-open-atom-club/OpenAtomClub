@@ -51,11 +51,11 @@ header:
 
 - **链接**：[https://osd.openatom.club/](https://osd.openatom.club/)
 
-### TrustedAgentHub
+### Linux 内核高校贡献排行榜
 
-查找和安装 Agent Skills、MCP 服务及插件，并查看安全扫描和审核结果。
+基于 Linux 内核 Git 仓库数据，按高校邮箱域名统计补丁贡献并生成排行榜。
 
-- **链接**：[https://tah.openatom.club/](https://tah.openatom.club/)
+- **链接**：[https://edurank.openatom.club/](https://edurank.openatom.club/)
 
 ### 开源实习管理平台
 
@@ -74,12 +74,6 @@ header:
 HUST openatom Club Translation Team，负责翻译国外优秀媒体关于 Linux 开源生态系统（尤其注重内核）的技术、资讯等内容。
 
 - **链接**：[https://hctt.hust.openatom.club](https://hctt.hust.openatom.club)
-
-### Linux 内核高校补丁贡献排行榜
-
-根据 Linux 官方统计数据，统计全球各高校（按域名）对 Linux 内核的补丁贡献总数，并生成排行榜。
-
-- **链接**：[https://edurank.hust.openatom.club](https://edurank.hust.openatom.club)
 
 ### 开源活动截止日期项目
 
