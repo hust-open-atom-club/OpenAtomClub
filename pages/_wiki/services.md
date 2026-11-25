@@ -25,11 +25,11 @@ header:
 
 - **链接**：[https://mirrors.hust.edu.cn](https://mirrors.hust.edu.cn)
 
-### Gitea 代码托管平台
+### GitLab 代码托管平台
 
-基于 Gitea 部署，支持代码托管、问题跟踪、团队协作、持续集成等功能，覆盖基本开发流程。支持使用 HUST 统一身份认证登录。
+基于 GitLab 部署，支持代码托管、问题跟踪、团队协作、持续集成等功能，覆盖基本开发流程。支持使用 HUST 统一身份认证登录。
 
-- **链接**：[https://git.cse.hust.edu.cn](https://git.cse.hust.edu.cn)
+- **链接**：[https://git.hust.edu.cn](https://git.hust.edu.cn)
 
 ### Seafile 文件存储平台
 
@@ -45,6 +45,24 @@ header:
 
 ## 特色项目与教育平台
 
+### 开源贡献数据看板
+
+按技术小组和项目查看俱乐部的提交、拉取请求和议题，了解开源协作趋势。
+
+- **链接**：[https://osd.openatom.club/](https://osd.openatom.club/)
+
+### Linux 内核高校贡献排行榜
+
+基于 Linux 内核 Git 仓库数据，按高校邮箱域名统计补丁贡献并生成排行榜。
+
+- **链接**：[https://edurank.openatom.club/](https://edurank.openatom.club/)
+
+### 开源实习管理平台
+
+浏览俱乐部的开源实习项目，提交申请、跟踪审核进度并提交结项材料。
+
+- **链接**：[https://intern.openatom.club/](https://intern.openatom.club/)
+
 ### pwn.hust.college 教育实践平台
 
 一个基于神奇宝贝动画设计的 CTF 趣味教育平台，供学生学习和动手实践网络空间安全的核心攻防技术。
@@ -56,12 +74,6 @@ header:
 HUST openatom Club Translation Team，负责翻译国外优秀媒体关于 Linux 开源生态系统（尤其注重内核）的技术、资讯等内容。
 
 - **链接**：[https://hctt.hust.openatom.club](https://hctt.hust.openatom.club)
-
-### Linux 内核高校补丁贡献排行榜
-
-根据 Linux 官方统计数据，统计全球各高校（按域名）对 Linux 内核的补丁贡献总数，并生成排行榜。
-
-- **链接**：[https://edurank.hust.openatom.club](https://edurank.hust.openatom.club)
 
 ### 开源活动截止日期项目
 
