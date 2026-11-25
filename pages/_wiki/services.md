@@ -25,11 +25,11 @@ header:
 
 - **链接**：[https://mirrors.hust.edu.cn](https://mirrors.hust.edu.cn)
 
-### Gitea 代码托管平台
+### GitLab 代码托管平台
 
-基于 Gitea 部署，支持代码托管、问题跟踪、团队协作、持续集成等功能，覆盖基本开发流程。支持使用 HUST 统一身份认证登录。
+基于 GitLab 部署，支持代码托管、问题跟踪、团队协作、持续集成等功能，覆盖基本开发流程。支持使用 HUST 统一身份认证登录。
 
-- **链接**：[https://git.cse.hust.edu.cn](https://git.cse.hust.edu.cn)
+- **链接**：[https://git.hust.edu.cn](https://git.hust.edu.cn)
 
 ### Seafile 文件存储平台
 
@@ -44,6 +44,24 @@ header:
 - **链接**：[https://cse-tex.hust.edu.cn](https://cse-tex.hust.edu.cn)
 
 ## 特色项目与教育平台
+
+### 开源贡献数据看板
+
+按技术小组和项目查看俱乐部的提交、拉取请求和议题，了解开源协作趋势。
+
+- **链接**：[https://osd.openatom.club/](https://osd.openatom.club/)
+
+### TrustedAgentHub
+
+查找和安装 Agent Skills、MCP 服务及插件，并查看安全扫描和审核结果。
+
+- **链接**：[https://tah.openatom.club/](https://tah.openatom.club/)
+
+### 开源实习管理平台
+
+浏览俱乐部的开源实习项目，提交申请、跟踪审核进度并提交结项材料。
+
+- **链接**：[https://intern.openatom.club/](https://intern.openatom.club/)
 
 ### pwn.hust.college 教育实践平台
 
